@@ -25,7 +25,7 @@ import os
 
 import numpy as np
 import matplotlib.pyplot as plt
-
+import seaborn as sns
 
 class iSummaryWriter(object):
 
@@ -55,7 +55,10 @@ class iSummaryWriter(object):
         self.update_ax_list()
 
     def init_plt(self) -> None:
-        plt.style.use('seaborn-darkgrid')
+        sns.set_style("darkgrid")
+
+        pass
+    #     plt.style.use('seaborn-darkgrid')
 
     def create_params_dict(self, params: list) -> dict:
         """

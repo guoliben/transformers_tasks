@@ -55,7 +55,10 @@ class iSummaryWriter(object):
         self.update_ax_list()
 
     def init_plt(self) -> None:
-        plt.style.use('seaborn-darkgrid')
+        pass
+	#plt.style.use('seaborn-darkgrid')
+        #plt.style.use('darkgrid')
+        #plt.style.use('whitegrid')
 
     def create_params_dict(self, params: list) -> dict:
         """

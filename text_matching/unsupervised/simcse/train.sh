@@ -12,4 +12,4 @@ python train.py \
     --valid_steps 400 \
     --logging_steps 50 \
     --num_train_epochs 8 \
-    --device "cuda:2"
+    --device "mps:2"

@@ -11,4 +11,4 @@ python train.py \
     --num_train_epochs 20 \
     --logging_steps 10 \
     --valid_steps 100 \
-    --device cuda:0
+    --device mps:0

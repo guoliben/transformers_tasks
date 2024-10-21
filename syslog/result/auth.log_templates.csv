@@ -1,0 +1,65 @@
+EventId,EventTemplate,Occurrences
+8bd0ff48,<*> test-pc sudo: <*> : problem with defaults entries ; <*> ; <*> ; <*> ;,525
+a289d69d,<*> test-pc sudo: root : TTY=unknown ; PWD=/ ; USER=test ; ENV=DISPLAY=:0 XAUTHORITY=/home/test/.Xauthority ; COMMAND=/usr/bin/xdg-open http://capnet.elementary.io,6
+8a0ea4d5,<*> test-pc <*> <*> session opened for user <*> by <*>,907
+d782cc31,<*> test-pc <*> <*> session closed for user <*>,854
+d91f08a9,<*> test-pc <*> Session <*> logged out. Waiting for processes to exit.,79
+88b9b064,<*> test-pc <*> Removed session <*>,74
+d5e51ab9,<*> test-pc <*> Accepted publickey for test from <*> port <*> ssh2: RSA <*>,101
+5cb014f5,<*> test-pc <*> New session <*> of user test.,115
+ae6063c7,<*> test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 没有那个文件或目录,213
+9a92f171,<*> test-pc sudo: <*> : <*> ; <*> ; USER=root ; <*> <*> <*>,136
+eb6873cf,<*> test-pc sudo: test : <*> ; <*> ; USER=root ; <*> <*> <*> <*>,75
+a0a782fd,<*> test-pc <*> s3 config support mem standby freeze,26
+1c15db5d,<*> test-pc ukui-screensaver-dialog: PAM unable to dlopen(pam_gnome_keyring.so): /lib/security/pam_gnome_keyring.so: 无法打开共享对象文件: 没有那个文件或目录,26
+8493c888,<*> test-pc ukui-screensaver-dialog: PAM adding faulty module: pam_gnome_keyring.so,26
+d0280b79,"<*> test-pc ukui-screensaver-dialog: pam_succeed_if(ukui-screensaver-qt:auth): requirement ""user ingroup nopasswdlogin"" not met by user ""test""",26
+3d5fe84c,<*> test-pc sudo: <*> : <*> ; <*> ; USER=root ; <*> <*>,166
+6932496c,<*> test-pc polkitd(authority=local): Operator of unix-session:4 FAILED to authenticate to gain authorization for action org.boxmanager.qt.systemdbus.action.login for unix-process:1378781:101966560 [/usr/bin/peony] (owned by unix-user:test),2
+f84edad1,<*> test-pc sudo: test : <*> ; <*> ; USER=root ; <*>,111
+53f0cadd,<*> test-pc <*> Received disconnect from <*> port <*> disconnected by user,40
+a04bd27c,<*> test-pc <*> Disconnected from user test <*> port <*>,40
+32cbae5a,<*> test-pc sudo: test : <*> ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/setfattr -n security.dlp -v file-sens:BD_L4_15 <*>,10
+1cb8acce,<*> test-pc su: (to root) test on <*>,14
+aa23714a,<*> test-pc <*> kysdk version = <*>-0k0.13,6
+fd8106cb,<*> test-pc <*> New seat seat0.,6
+75068952,<*> test-pc <*> Watching system buttons on <*> <*> <*>,18
+1012c41f,20:05 test-pc systemd-logind[3271]: Watching system buttons on <*> <*> <*> <*>,2
+5be5880d,<*> test-pc <*> Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard),6
+13067b69,<*> test-pc <*> Server listening on <*> port 22.,12
+814f5225,"<*> test-pc polkitd(authority=local): Registered Authentication Agent for unix-session:4 (system bus name <*> [/usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1], object path /org/ukui/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)",6
+c181673e,26:58 test-pc sshd[11606]: error: connect_to <*> port 43675: failed.,2
+3aa35bf6,<*> test-pc <*> couldn't access control socket: /run/user/1000/keyring/control: 没有那个文件或目录,4
+33dcd1f5,48:28 test-pc systemd-logind[3452]: Watching system buttons on <*> <*> <*> <*>,2
+4ef738f7,<*> test-pc polkitd(authority=local): Unregistered Authentication Agent for <*> (system bus name <*> object path <*> locale zh_CN.UTF-8) (disconnected from bus),2
+f3a3fc55,13:22 test-pc systemd-logind[3438]: Watching system buttons on <*> <*> <*> <*>,2
+13cbe884,<*> test-pc sudo: message repeated 2 times: [ pam_unix(sudo:auth): Couldn't open /etc/securetty: 没有那个文件或目录],5
+956eeb82,22:45 test-pc sshd[9520]: pam_systemd(sshd:session): Failed to release session: 被中断的系统调用,1
+e3b4ecc8,29:17 test-pc systemd-logind[3446]: Watching system buttons on <*> <*> <*> <*>,2
+db0850f1,<*> test-pc sudo: pam_unix(sudo:auth): authentication failure; <*> uid=1000 euid=0 <*> ruser=test rhost= user=test,4
+ba726aba,33:36 test-pc systemd-logind[3443]: Watching system buttons on <*> <*> <*> <*>,2
+1783a160,<*> test-pc systemd-logind[3443]: Lid <*>,4
+230e814a,<*> test-pc <*> send PrepareForSleep <*>,10
+1e91b2a6,<*> test-pc <*> Operation 'sleep' finished.,5
+d8231181,<*> test-pc <*> <*> auth could not identify password for [test],7
+0d16e493,<*> test-pc <*> Accepted password for test from <*> port <*> ssh2,8
+e729fe98,<*> test-pc sudo: root : <*> ; <*> ; USER=root ; <*> <*> <*> <*>,4
+56940742,"41:43 test-pc polkitd(authority=local): Registered Authentication Agent for unix-process:433498:15169385 (system bus name :1.1744 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)",1
+51450b44,41:50 test-pc polkitd(authority=local): Operator of unix-process:433498:15169385 successfully authenticated as unix-user:test to gain ONE-SHOT authorization for action org.freedesktop.systemd1.manage-units for system-bus-name::1.1745 [systemctl start hedron-client.service] (owned by unix-user:test),1
+5cd87e97,<*> test-pc sudo: pam_unix(sudo:auth): conversation failed,2
+88ebbb66,52:42 test-pc systemd-logind[3418]: Watching system buttons on <*> <*> <*> <*>,2
+733ed414,29:30 test-pc sudo: test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control ; USER=root ; COMMAND=/usr/bin/rm -r debian/print-control/ debian/source/ debian/UnInstall.sh,1
+ce3dc987,41:14 test-pc sudo: test : TTY=pts/5 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/setfattr sudo setfattr -n security.dlp -v file-sens:BD_L4_15,1
+1099ee56,43:06 test-pc sudo: test : TTY=pts/8 ; PWD=/home/test/zhangyun/work/dlp-v4.2 ; USER=root ; COMMAND=/usr/bin/rm -r print-control-1 print-control_1.0.0_amd64.buildinfo print-control_1.0.0_amd64.changes print-control_1.0.0_amd64.deb print-control_1.0.0.dsc print-control_1.0.0.tar.xz,1
+2794d936,03:46 test-pc sudo: test : TTY=pts/25 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/debian ; USER=root ; COMMAND=/usr/bin/rm -r .debhelper/ debhelper-build-stamp print-control/ print-control.substvars,1
+3bd017ab,20:23 test-pc sudo: root : TTY=pts/26 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/sed -E -i /^application\/pdf.*application\/vnd\.cups-pdf/a\#012application/pdf application\/vnd.cups-pdf 6 textmonitor /usr/share/cups/mime/cupsfilters.convs,1
+91ed1419,33:07 test-pc sudo: test : TTY=pts/25 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/debian ; USER=root ; COMMAND=/usr/bin/rm -r .debhelper/ debhelper-build-stamp files print-control/ print-control.substvars,1
+1706d827,<*> test-pc systemd-logind[3418]: Lid <*>,6
+a7f162fa,38:14 test-pc sudo: test : TTY=pts/9 ; PWD=/home/test/ben/syslog ; USER=root ; COMMAND=/usr/bin/cp -r /var/log/syslog /var/log/syslog.1 /var/log/syslog.2.gz /var/log/syslog.3.gz /var/log/syslog.4.gz /var/log/syslog.5.gz /var/log/syslog.6.gz /var/log/syslog.7.gz /var/log/syslog.bak .,2
+d2529c9c,40:29 test-pc sudo: test : TTY=pts/9 ; PWD=/home/test/ben/syslog ; USER=root ; COMMAND=/usr/bin/cat file.txt syslog syslog.1 syslog.2.gz syslog.3.gz syslog.4.gz syslog.5.gz syslog.6.gz syslog.7.gz syslog.bak,2
+721f1d0b,05:58 test-pc sudo: test : 3 incorrect password attempts ; TTY=pts/53 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/ls,2
+4a027c7b,58:10 test-pc sshd[527807]: Invalid user testx from <*> port 63758,1
+a1dc3cb9,58:14 test-pc sshd[527807]: pam_unix(sshd:auth): Cannot access user [testx] info,1
+7edbbb58,58:14 test-pc sshd[527807]: Failed password for invalid user testx from <*> port 63758 ssh2,1
+84627ed3,58:15 test-pc sshd[527807]: message repeated 2 times: [ Failed password for invalid user testx from <*> port 63758 ssh2],1
+11c76fb8,58:15 test-pc sshd[527807]: Connection closed by invalid user testx <*> port 63758 [preauth],1

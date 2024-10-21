@@ -1,0 +1,1246 @@
+Oct 11 09:12:28 test-pc dbus-daemon[128494]: [session uid=1000 pid=128492] [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 11 10:42:46 test-pc kernel: [71408.720729][T168593] Modules linked in: ky_dlp(OE) uas usb_storage dlp_file_pro(OE) st iptable_filter rfcomm cmac algif_hash vboxnetadp(OE) algif_skcipher vboxnetflt(OE) af_alg vboxdrv(OE) bnep snd_soc_skl_hda_dsp snd_soc_intel_hda_dsp_common snd_soc_hdac_hdmi snd_soc_dmic hid_generic x86_pkg_temp_thermal intel_powerclamp mei_hdcp coretemp intel_rapl_msr kvm_intel kvm snd_hda_codec_hdmi snd_hda_codec_realtek snd_hda_codec_generic crct10dif_pclmul crc32_pclmul snd_sof_pci snd_sof_intel_byt snd_sof_intel_ipc snd_sof_intel_hda_common snd_soc_hdac_hda ghash_clmulni_intel snd_sof_xtensa_dsp snd_sof_intel_hda snd_sof iwlmvm snd_hda_ext_core rapl snd_soc_acpi_intel_match uvcvideo intel_cstate snd_soc_acpi btusb videobuf2_vmalloc btrtl snd_soc_core videobuf2_memops videobuf2_v4l2 mac80211 usbhid btbcm snd_compress videobuf2_common btintel ac97_bus bluetooth joydev snd_pcm_dmaengine videodev snd_hda_intel wmi_bmof libarc4 mc hid snd_intel_dspcfg ecdh_generic ecc intel_wmi_thunderbolt
+Oct 11 10:42:46 test-pc kernel: [71408.720767][T168593]  snd_hda_codec e1000e snd_hda_core iwlwifi snd_hwdep snd_pcm thunderbolt thinkpad_acpi nvram ledtrig_audio cfg80211 mei_me intel_pch_thermal snd_seq_midi mei snd_seq_midi_event processor_thermal_device intel_rapl_common snd_rawmidi intel_soc_dts_iosf ucsi_acpi typec_ucsi typec snd_seq snd_seq_device snd_timer snd soundcore int3403_thermal int340x_thermal_zone intel_hid int3400_thermal sparse_keymap acpi_thermal_rel acpi_pad sch_fq_codel vmwgfx ttm parport_pc ppdev lp parport ramoops reed_solomon efi_pstore ip_tables x_tables autofs4 nls_iso8859_1 multipath linear rtsx_pci_sdmmc i915 aesni_intel glue_helper crypto_simd cryptd input_leds psmouse serio_raw nvme i2c_algo_bit drm_kms_helper syscopyarea sysfillrect sysimgblt fb_sys_fops cec nvme_core drm rtsx_pci wmi video pinctrl_cannonlake mac_hid [last unloaded: ky_dlp]
+Oct 11 10:42:46 test-pc kernel: [71408.720805][T168593] CPU: 1 PID: 168593 Comm: kydlp-d Tainted: G        W  OE     5.10.0-8-generic #33~v10pro-KYLINOS
+Oct 11 10:42:46 test-pc kernel: [71408.720830][T168593]  get_hash+0x57/0xf0 [dlp_file_pro]
+Oct 11 10:42:46 test-pc kernel: [71408.720831][T168593]  control_by_blacklist+0xa6/0xf0 [dlp_file_pro]
+Oct 11 10:42:46 test-pc kernel: [71408.720840][T168593]  dlp_file_open+0xab/0x110 [dlp_file_pro]
+Oct 11 11:12:19 test-pc kernel: [73181.447888][T130498] [   3487]     0  3487   137832        0   126976      315             0 kydlp-control
+Oct 11 11:12:19 test-pc kernel: [73181.448355][T130498] [ 168590]     0 168590  9456827  2413803 53301248  4082944             0 kydlp-d
+Oct 11 11:12:19 test-pc kernel: [73181.448378][T130498] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-40.scope,task=kydlp-d,pid=168590,uid=0
+Oct 11 11:12:19 test-pc kernel: [73181.448423][T130498] Out of memory: Killed process 168590 (kydlp-d) total-vm:37827308kB, anon-rss:9655212kB, file-rss:0kB, shmem-rss:0kB, UID:0 pgtables:52052kB oom_score_adj:0
+Oct 11 11:12:20 test-pc kernel: [73183.334456][   T63] oom_reaper: reaped process 168590 (kydlp-d), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Oct 10 14:11:03 test-pc kernel: [160639.899296][T515738] dlp_file_pro: user[1000] task[mv]  rename sensitive file: [abc5] 
+Oct 10 14:15:58 test-pc kernel: [160652.891987][T515868] dlp_file_pro: user[1000] task[mv]  rename sensitive file: [bac55] 
+Oct 10 14:19:50 test-pc kernel: [161179.124745][T521603] Security Module dlp_file_pro removed
+Oct 10 14:19:50 test-pc kernel: [161179.124750][T521603] dlp_file_pro module exit
+Oct 10 14:19:50 test-pc kernel: [161179.180979][T521607] dlp_file_pro module initializing.
+Oct 10 14:19:50 test-pc kernel: [161179.180982][T521607] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:19:50 test-pc kernel: [161179.180982][T521607] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:19:50 test-pc kernel: [161179.180990][T521607] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:20:13 test-pc kernel: [161194.913504][T521751] dlp_file_pro: uid=1000 pid=521751 comm=mv rename sensitive file: [abc5] 
+Oct 10 14:20:16 test-pc kernel: [161202.870550][T521793] dlp_file_pro: uid=1000 pid=521793 comm=mv rename sensitive file: [abc55] 
+Oct 10 14:20:17 test-pc kernel: [161205.176810][T521810] dlp_file_pro: uid=1000 pid=521810 comm=mv rename sensitive file: [abc5] 
+Oct 10 14:20:18 test-pc kernel: [161206.217889][T521814] dlp_file_pro: uid=1000 pid=521814 comm=mv rename sensitive file: [abc55] 
+Oct 10 14:20:18 test-pc kernel: [161207.177583][T521821] dlp_file_pro: uid=1000 pid=521821 comm=mv rename sensitive file: [abc5] 
+Oct 10 14:25:45 test-pc kernel: [161208.058699][T521822] dlp_file_pro: uid=1000 pid=521822 comm=mv rename sensitive file: [abc55] 
+Oct 10 14:25:45 test-pc kernel: [161534.970693][T525711] Security Module dlp_file_pro removed
+Oct 10 14:25:45 test-pc kernel: [161534.970698][T525711] dlp_file_pro module exit
+Oct 10 14:25:45 test-pc kernel: [161535.025387][T525715] dlp_file_pro module initializing.
+Oct 10 14:25:45 test-pc kernel: [161535.025391][T525715] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:25:45 test-pc kernel: [161535.025391][T525715] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:25:45 test-pc kernel: [161535.025397][T525715] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:26:07 test-pc kernel: [161551.359131][T525869] dlp_file_pro: uid=1000 pid=525869 comm=/usr/bin/mv rename sensitive file: [abc5] to [abc55]
+Oct 10 14:26:09 test-pc kernel: [161556.892136][T525898] dlp_file_pro: uid=1000 pid=525898 comm=/usr/bin/mv rename sensitive file: [abc55] to [abc5]
+Oct 10 14:26:10 test-pc kernel: [161558.404922][T525905] dlp_file_pro: uid=1000 pid=525905 comm=/usr/bin/mv rename sensitive file: [abc5] to [abc55]
+Oct 10 14:26:11 test-pc kernel: [161559.339937][T525912] dlp_file_pro: uid=1000 pid=525912 comm=/usr/bin/mv rename sensitive file: [abc55] to [abc5]
+Oct 10 14:26:12 test-pc kernel: [161560.304801][T525916] dlp_file_pro: uid=1000 pid=525916 comm=/usr/bin/mv rename sensitive file: [abc5] to [abc55]
+Oct 10 14:39:01 test-pc kernel: [161561.124382][T525923] dlp_file_pro: uid=1000 pid=525923 comm=/usr/bin/mv rename sensitive file: [abc55] to [abc5]
+Oct 10 14:39:01 test-pc kernel: [162330.208733][T533201] Security Module dlp_file_pro removed
+Oct 10 14:39:01 test-pc kernel: [162330.208740][T533201] dlp_file_pro module exit
+Oct 10 14:39:01 test-pc kernel: [162330.254268][T533210] dlp_file_pro module initializing.
+Oct 10 14:39:01 test-pc kernel: [162330.254272][T533210] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:39:01 test-pc kernel: [162330.254272][T533210] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:39:01 test-pc kernel: [162330.254280][T533210] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:39:47 test-pc kernel: [162372.121449][T533548] dlp_file_pro: uid=1000 pid=533548 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162
+Oct 10 14:40:52 test-pc kernel: [162376.806549][T533573] dlp_file_pro: uid=1000 pid=533573 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162
+Oct 10 14:40:54 test-pc kernel: [162442.023455][T534015] dlp_file_pro: uid=1000 pid=534015 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162
+Oct 10 14:41:57 test-pc kernel: [162443.096707][T534022] dlp_file_pro: uid=1000 pid=534022 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162
+Oct 10 14:45:44 test-pc kernel: [162506.276532][T534656] dlp_file_pro: uid=1000 pid=534656 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162
+Oct 10 14:45:44 test-pc kernel: [162733.522751][T537345] Security Module dlp_file_pro removed
+Oct 10 14:45:44 test-pc kernel: [162733.522758][T537345] dlp_file_pro module exit
+Oct 10 14:45:44 test-pc kernel: [162733.562840][T537349] dlp_file_pro module initializing.
+Oct 10 14:45:44 test-pc kernel: [162733.562843][T537349] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:45:44 test-pc kernel: [162733.562844][T537349] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:45:44 test-pc kernel: [162733.562850][T537349] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:45:48 test-pc kernel: [162736.660448][T537373] dlp_file_pro: uid=1000 pid=537373 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162 den_ino=3939923
+Oct 10 14:47:45 test-pc kernel: [162737.953104][T537377] dlp_file_pro: uid=1000 pid=537377 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162 den_ino=3939923
+Oct 10 14:47:45 test-pc kernel: [162854.191898][T539726] Security Module dlp_file_pro removed
+Oct 10 14:47:45 test-pc kernel: [162854.191904][T539726] dlp_file_pro module exit
+Oct 10 14:47:45 test-pc kernel: [162854.234359][T539730] dlp_file_pro module initializing.
+Oct 10 14:47:45 test-pc kernel: [162854.234363][T539730] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:47:45 test-pc kernel: [162854.234363][T539730] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:47:45 test-pc kernel: [162854.234370][T539730] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:49:52 test-pc kernel: [162981.453849][T540754] RIP: 0010:dlp_file_rename+0x117/0x140 [dlp_file_pro]
+Oct 10 14:49:52 test-pc kernel: [162981.453886][T540754] Modules linked in: dlp_file_pro(OE) binfmt_misc st iptable_filter rfcomm cmac algif_hash algif_skcipher vboxnetadp(OE) af_alg vboxnetflt(OE) vboxdrv(OE) bnep snd_soc_skl_hda_dsp snd_soc_intel_hda_dsp_common snd_soc_hdac_hdmi snd_soc_dmic snd_hda_codec_hdmi hid_generic snd_hda_codec_realtek mei_hdcp snd_hda_codec_generic intel_rapl_msr snd_sof_pci snd_sof_intel_byt snd_sof_intel_ipc snd_sof_intel_hda_common iwlmvm x86_pkg_temp_thermal snd_soc_hdac_hda intel_powerclamp snd_sof_xtensa_dsp coretemp snd_sof_intel_hda mac80211 snd_sof kvm_intel kvm crct10dif_pclmul snd_hda_ext_core snd_soc_acpi_intel_match snd_soc_acpi crc32_pclmul snd_soc_core libarc4 snd_compress ac97_bus ghash_clmulni_intel snd_pcm_dmaengine rapl snd_hda_intel intel_cstate snd_intel_dspcfg joydev uvcvideo snd_hda_codec snd_hda_core videobuf2_vmalloc btusb usbhid thinkpad_acpi btrtl videobuf2_memops snd_hwdep videobuf2_v4l2 btbcm iwlwifi nvram videobuf2_common hid btintel ledtrig_audio
+Oct 10 14:49:52 test-pc kernel: [162981.453917][T540754]  intel_wmi_thunderbolt videodev wmi_bmof bluetooth thunderbolt snd_pcm e1000e mc ecdh_generic ecc snd_seq_midi snd_seq_midi_event cfg80211 processor_thermal_device mei_me ucsi_acpi intel_rapl_common typec_ucsi mei intel_soc_dts_iosf intel_pch_thermal typec snd_rawmidi snd_seq snd_seq_device snd_timer snd soundcore int3403_thermal int340x_thermal_zone intel_hid int3400_thermal acpi_pad acpi_thermal_rel sparse_keymap sch_fq_codel vmwgfx ttm parport_pc ppdev lp parport ramoops reed_solomon efi_pstore ip_tables x_tables autofs4 nls_iso8859_1 multipath linear rtsx_pci_sdmmc i915 aesni_intel glue_helper crypto_simd cryptd psmouse input_leds serio_raw i2c_algo_bit nvme drm_kms_helper syscopyarea sysfillrect nvme_core sysimgblt fb_sys_fops cec drm rtsx_pci wmi video pinctrl_cannonlake mac_hid [last unloaded: dlp_file_pro]
+Oct 10 14:49:52 test-pc kernel: [162981.636095][T540754] RIP: 0010:dlp_file_rename+0x117/0x140 [dlp_file_pro]
+Oct 10 14:52:41 test-pc systemd-modules-load[1680]: Failed to insert module 'ky_dlp': No such file or directory
+Oct 10 14:52:41 test-pc systemd[1]: Starting kylin dlp control...
+Oct 10 14:52:41 test-pc dbus-daemon[3138]: [system] [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 10 14:52:41 test-pc systemd[1]: Started kylin dlp control.
+Oct 10 14:52:41 test-pc dbus-daemon[3138]: [system] [bus_registry_acquire_service] service com.kylin.dlp.TransControl has a unique name :1.14
+Oct 10 14:52:41 test-pc bash[3487]: 重置状态失败：open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:42 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [3206] 
+Oct 10 14:52:42 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:42 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [3206] 
+Oct 10 14:52:42 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:42 test-pc python3[3206]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:42 test-pc python3[3206]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4254] 
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4254] 
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:43 test-pc python3[4254]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:43 test-pc python3[4254]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4472] 
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4472] 
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:43 test-pc python3[4472]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:43 test-pc python3[4472]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4603] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4603] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc python3[4603]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc python3[4603]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc dbus-daemon[4653]: [session uid=1000 pid=4653] [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4659] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4659] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc dbus-daemon[4748]: [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 10 14:52:44 test-pc python3[4659]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc python3[4659]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4802] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4802] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc python3[4802]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc python3[4802]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:46 test-pc dbus-daemon[5630]: [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 10 14:59:29 test-pc kernel: [  411.789357][T11988] dlp_file_pro module initializing.
+Oct 10 14:59:29 test-pc kernel: [  411.789361][T11988] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:59:29 test-pc kernel: [  411.789361][T11988] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:59:29 test-pc kernel: [  411.789368][T11988] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:59:59 test-pc kernel: [  434.432205][T12144] dlp_file_pro: uid=1000 pid=12144 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:00:00 test-pc kernel: [  442.072948][T12181] dlp_file_pro: uid=1000 pid=12181 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:00:01 test-pc kernel: [  443.308826][T12186] dlp_file_pro: uid=1000 pid=12186 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:00:02 test-pc kernel: [  444.218486][T12192] dlp_file_pro: uid=1000 pid=12192 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:00:03 test-pc kernel: [  445.483980][T12220] dlp_file_pro: uid=1000 pid=12220 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:02:00 test-pc kernel: [  446.546444][T12224] dlp_file_pro: uid=1000 pid=12224 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:02:00 test-pc kernel: [  563.548959][T13664] Security Module dlp_file_pro removed
+Oct 10 15:02:00 test-pc kernel: [  563.548966][T13664] dlp_file_pro module exit
+Oct 10 15:02:01 test-pc kernel: [  563.608485][T13668] dlp_file_pro module initializing.
+Oct 10 15:02:01 test-pc kernel: [  563.608489][T13668] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:02:01 test-pc kernel: [  563.608489][T13668] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:02:01 test-pc kernel: [  563.608496][T13668] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:02:20 test-pc kernel: [  577.741047][T13732] dlp_file_pro: uid=1000 pid=13732 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:21 test-pc kernel: [  582.835649][T13752] dlp_file_pro: uid=1000 pid=13752 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:22 test-pc kernel: [  584.255907][T13761] dlp_file_pro: uid=1000 pid=13761 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:23 test-pc kernel: [  585.178756][T13765] dlp_file_pro: uid=1000 pid=13765 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:24 test-pc kernel: [  585.967743][T13769] dlp_file_pro: uid=1000 pid=13769 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:25 test-pc kernel: [  586.839519][T13773] dlp_file_pro: uid=1000 pid=13773 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:40 test-pc kernel: [  587.639839][T13774] dlp_file_pro: uid=1000 pid=13774 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:40 test-pc kernel: [ 1383.187084][T18968] Security Module dlp_file_pro removed
+Oct 10 15:15:40 test-pc kernel: [ 1383.187091][T18968] dlp_file_pro module exit
+Oct 10 15:15:40 test-pc kernel: [ 1383.264257][T18972] dlp_file_pro module initializing.
+Oct 10 15:15:40 test-pc kernel: [ 1383.264260][T18972] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:15:40 test-pc kernel: [ 1383.264260][T18972] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:15:40 test-pc kernel: [ 1383.264267][T18972] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:15:43 test-pc kernel: [ 1386.343750][T18985] dlp_file_pro: uid=1000 pid=18985 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:45 test-pc kernel: [ 1386.343753][T18985] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:15:45 test-pc kernel: [ 1387.637146][T19058] dlp_file_pro: uid=1000 pid=19058 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:46 test-pc kernel: [ 1387.637149][T19058] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:15:46 test-pc kernel: [ 1388.633956][T19123] dlp_file_pro: uid=1000 pid=19123 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:46 test-pc kernel: [ 1388.633959][T19123] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:15:46 test-pc kernel: [ 1389.488928][T19127] dlp_file_pro: uid=1000 pid=19127 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:47 test-pc kernel: [ 1389.488931][T19127] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:47 test-pc kernel: [ 1450.112463][T20431] Security Module dlp_file_pro removed
+Oct 10 15:16:47 test-pc kernel: [ 1450.112468][T20431] dlp_file_pro module exit
+Oct 10 15:16:47 test-pc kernel: [ 1450.157783][T20435] dlp_file_pro module initializing.
+Oct 10 15:16:47 test-pc kernel: [ 1450.157787][T20435] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:16:47 test-pc kernel: [ 1450.157787][T20435] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:16:47 test-pc kernel: [ 1450.157795][T20435] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:16:56 test-pc kernel: [ 1458.765178][T20463] dlp_file_pro: uid=1000 pid=20463 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:56 test-pc kernel: [ 1458.765180][T20463] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:57 test-pc kernel: [ 1458.765181][T20463] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:16:57 test-pc kernel: [ 1459.818938][T20467] dlp_file_pro: uid=1000 pid=20467 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:57 test-pc kernel: [ 1459.818940][T20467] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:57 test-pc kernel: [ 1459.818941][T20467] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:16:57 test-pc kernel: [ 1460.558451][T20480] dlp_file_pro: uid=1000 pid=20480 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:57 test-pc kernel: [ 1460.558454][T20480] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:58 test-pc kernel: [ 1460.558455][T20480] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:16:58 test-pc kernel: [ 1461.324536][T20484] dlp_file_pro: uid=1000 pid=20484 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:58 test-pc kernel: [ 1461.324539][T20484] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:59 test-pc kernel: [ 1461.324540][T20484] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:16:59 test-pc kernel: [ 1462.166936][T20488] dlp_file_pro: uid=1000 pid=20488 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:59 test-pc kernel: [ 1462.166939][T20488] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:17:00 test-pc kernel: [ 1462.166940][T20488] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:17:00 test-pc kernel: [ 1462.885131][T20490] dlp_file_pro: uid=1000 pid=20490 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:17:00 test-pc kernel: [ 1462.885134][T20490] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:19:44 test-pc kernel: [ 1462.885135][T20490] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:19:44 test-pc kernel: [ 1626.791025][T21774] Security Module dlp_file_pro removed
+Oct 10 15:19:44 test-pc kernel: [ 1626.791030][T21774] dlp_file_pro module exit
+Oct 10 15:19:44 test-pc kernel: [ 1626.817188][T21778] dlp_file_pro module initializing.
+Oct 10 15:19:44 test-pc kernel: [ 1626.817192][T21778] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:19:44 test-pc kernel: [ 1626.817192][T21778] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:19:44 test-pc kernel: [ 1626.817199][T21778] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:19:47 test-pc kernel: [ 1629.883151][T21799] dlp_file_pro: uid=1000 pid=21799 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:47 test-pc kernel: [ 1629.883153][T21799] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:47 test-pc kernel: [ 1629.883154][T21799] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:48 test-pc kernel: [ 1629.883155][T21799] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:19:48 test-pc kernel: [ 1630.821272][T21803] dlp_file_pro: uid=1000 pid=21803 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:48 test-pc kernel: [ 1630.821275][T21803] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:48 test-pc kernel: [ 1630.821275][T21803] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:49 test-pc kernel: [ 1630.821276][T21803] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:19:49 test-pc kernel: [ 1631.831137][T21807] dlp_file_pro: uid=1000 pid=21807 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:49 test-pc kernel: [ 1631.831140][T21807] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:49 test-pc kernel: [ 1631.831141][T21807] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:50 test-pc kernel: [ 1631.831142][T21807] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:19:50 test-pc kernel: [ 1632.695039][T21819] dlp_file_pro: uid=1000 pid=21819 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:50 test-pc kernel: [ 1632.695041][T21819] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:50 test-pc kernel: [ 1632.695042][T21819] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:51 test-pc kernel: [ 1632.695043][T21819] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:19:51 test-pc kernel: [ 1633.729363][T21823] dlp_file_pro: uid=1000 pid=21823 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:51 test-pc kernel: [ 1633.729365][T21823] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:51 test-pc kernel: [ 1633.729366][T21823] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:52 test-pc kernel: [ 1633.729367][T21823] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:19:52 test-pc kernel: [ 1634.647465][T21827] dlp_file_pro: uid=1000 pid=21827 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:52 test-pc kernel: [ 1634.647467][T21827] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:52 test-pc kernel: [ 1634.647468][T21827] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:57 test-pc kernel: [ 1634.647469][T21827] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:19:57 test-pc kernel: [ 1640.051252][T21911] dlp_file_pro: uid=1000 pid=21911 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:57 test-pc kernel: [ 1640.051274][T21911] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:57 test-pc kernel: [ 1640.051275][T21911] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:57 test-pc kernel: [ 1640.051275][T21911] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:19:58 test-pc kernel: [ 1640.940530][T21953] dlp_file_pro: uid=1000 pid=21953 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:58 test-pc kernel: [ 1640.940533][T21953] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:58 test-pc kernel: [ 1640.940534][T21953] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:58 test-pc kernel: [ 1640.940534][T21953] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:18 test-pc kernel: [ 1781.111197][T31784] Security Module dlp_file_pro removed
+Oct 10 15:22:18 test-pc kernel: [ 1781.111202][T31784] dlp_file_pro module exit
+Oct 10 15:22:18 test-pc kernel: [ 1781.145743][T31788] dlp_file_pro module initializing.
+Oct 10 15:22:18 test-pc kernel: [ 1781.145747][T31788] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:22:18 test-pc kernel: [ 1781.145747][T31788] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:22:18 test-pc kernel: [ 1781.145754][T31788] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:22:25 test-pc kernel: [ 1788.547182][T31818] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:25 test-pc kernel: [ 1788.547183][T31818] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:25 test-pc kernel: [ 1788.547184][T31818] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:25 test-pc kernel: [ 1788.547185][T31818] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:26 test-pc kernel: [ 1788.547186][T31818] dlp_file_pro: uid=1000 pid=31818 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:26 test-pc kernel: [ 1789.415813][T31822] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:26 test-pc kernel: [ 1789.415814][T31822] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:26 test-pc kernel: [ 1789.415815][T31822] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:26 test-pc kernel: [ 1789.415816][T31822] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:27 test-pc kernel: [ 1789.415817][T31822] dlp_file_pro: uid=1000 pid=31822 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:27 test-pc kernel: [ 1790.213338][T31826] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:27 test-pc kernel: [ 1790.213339][T31826] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:27 test-pc kernel: [ 1790.213340][T31826] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:27 test-pc kernel: [ 1790.213341][T31826] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:28 test-pc kernel: [ 1790.213342][T31826] dlp_file_pro: uid=1000 pid=31826 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:28 test-pc kernel: [ 1790.933158][T31830] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:28 test-pc kernel: [ 1790.933160][T31830] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:28 test-pc kernel: [ 1790.933161][T31830] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:28 test-pc kernel: [ 1790.933161][T31830] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:29 test-pc kernel: [ 1790.933162][T31830] dlp_file_pro: uid=1000 pid=31830 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:29 test-pc kernel: [ 1791.771638][T31834] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:29 test-pc kernel: [ 1791.771640][T31834] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:29 test-pc kernel: [ 1791.771641][T31834] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:29 test-pc kernel: [ 1791.771641][T31834] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:29 test-pc kernel: [ 1791.771643][T31834] dlp_file_pro: uid=1000 pid=31834 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:29 test-pc kernel: [ 1792.484163][T31835] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:29 test-pc kernel: [ 1792.484164][T31835] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:29 test-pc kernel: [ 1792.484165][T31835] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:29 test-pc kernel: [ 1792.484166][T31835] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:30 test-pc kernel: [ 1792.484167][T31835] dlp_file_pro: uid=1000 pid=31835 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:30 test-pc kernel: [ 1793.255196][T31839] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:30 test-pc kernel: [ 1793.255198][T31839] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:30 test-pc kernel: [ 1793.255199][T31839] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:30 test-pc kernel: [ 1793.255199][T31839] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:31 test-pc kernel: [ 1793.255201][T31839] dlp_file_pro: uid=1000 pid=31839 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:31 test-pc kernel: [ 1794.047283][T31843] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:31 test-pc kernel: [ 1794.047285][T31843] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:31 test-pc kernel: [ 1794.047286][T31843] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:31 test-pc kernel: [ 1794.047287][T31843] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:32 test-pc kernel: [ 1794.047288][T31843] dlp_file_pro: uid=1000 pid=31843 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:32 test-pc kernel: [ 1794.783763][T31847] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:32 test-pc kernel: [ 1794.783764][T31847] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:32 test-pc kernel: [ 1794.783765][T31847] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:32 test-pc kernel: [ 1794.783766][T31847] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:34 test-pc kernel: [ 1794.783767][T31847] dlp_file_pro: uid=1000 pid=31847 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:34 test-pc kernel: [ 1796.916433][T31860] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:34 test-pc kernel: [ 1796.916435][T31860] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:34 test-pc kernel: [ 1796.916436][T31860] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:34 test-pc kernel: [ 1796.916436][T31860] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:35 test-pc kernel: [ 1796.916437][T31860] dlp_file_pro: uid=1000 pid=31860 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:35 test-pc kernel: [ 1797.799978][T31864] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:35 test-pc kernel: [ 1797.799979][T31864] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:35 test-pc kernel: [ 1797.799980][T31864] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:35 test-pc kernel: [ 1797.799981][T31864] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:36 test-pc kernel: [ 1797.799982][T31864] dlp_file_pro: uid=1000 pid=31864 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:36 test-pc kernel: [ 1798.640269][T31865] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:36 test-pc kernel: [ 1798.640271][T31865] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:36 test-pc kernel: [ 1798.640272][T31865] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:36 test-pc kernel: [ 1798.640272][T31865] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:36 test-pc kernel: [ 1798.640273][T31865] dlp_file_pro: uid=1000 pid=31865 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:36 test-pc kernel: [ 1799.481819][T31869] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:36 test-pc kernel: [ 1799.481821][T31869] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:36 test-pc kernel: [ 1799.481822][T31869] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:36 test-pc kernel: [ 1799.481822][T31869] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:37 test-pc kernel: [ 1799.481823][T31869] dlp_file_pro: uid=1000 pid=31869 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:37 test-pc kernel: [ 1800.248344][T31875] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:37 test-pc kernel: [ 1800.248346][T31875] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:37 test-pc kernel: [ 1800.248347][T31875] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:37 test-pc kernel: [ 1800.248347][T31875] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:26 test-pc kernel: [ 1800.248367][T31875] dlp_file_pro: uid=1000 pid=31875 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:26 test-pc kernel: [ 2329.021865][T35841] Security Module dlp_file_pro removed
+Oct 10 15:31:26 test-pc kernel: [ 2329.021889][T35841] dlp_file_pro module exit
+Oct 10 15:31:26 test-pc kernel: [ 2329.061569][T35845] dlp_file_pro module initializing.
+Oct 10 15:31:26 test-pc kernel: [ 2329.061573][T35845] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:31:26 test-pc kernel: [ 2329.061573][T35845] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:31:26 test-pc kernel: [ 2329.061580][T35845] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:31:29 test-pc kernel: [ 2331.931858][T35879] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:29 test-pc kernel: [ 2331.931860][T35879] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:29 test-pc kernel: [ 2331.931861][T35879] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:31:29 test-pc kernel: [ 2331.931861][T35879] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:30 test-pc kernel: [ 2331.931863][T35879] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35879 		comm=/usr/bin/mv 	old_file=/data/home/test/abc5 	new_file=/data/home/testabc55 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:30 test-pc kernel: [ 2332.852435][T35886] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:30 test-pc kernel: [ 2332.852437][T35886] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:30 test-pc kernel: [ 2332.852438][T35886] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:31:30 test-pc kernel: [ 2332.852439][T35886] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:31 test-pc kernel: [ 2332.852440][T35886] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35886 		comm=/usr/bin/mv 	old_file=/data/home/test/abc55 	new_file=/data/home/testabc5 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:31 test-pc kernel: [ 2333.652744][T35905] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:31 test-pc kernel: [ 2333.652746][T35905] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:31 test-pc kernel: [ 2333.652747][T35905] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:31:31 test-pc kernel: [ 2333.652747][T35905] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:32 test-pc kernel: [ 2333.652748][T35905] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35905 		comm=/usr/bin/mv 	old_file=/data/home/test/abc5 	new_file=/data/home/testabc55 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:32 test-pc kernel: [ 2334.602813][T35918] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:32 test-pc kernel: [ 2334.602815][T35918] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:32 test-pc kernel: [ 2334.602816][T35918] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:31:32 test-pc kernel: [ 2334.602817][T35918] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:32 test-pc kernel: [ 2334.602818][T35918] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35918 		comm=/usr/bin/mv 	old_file=/data/home/test/abc55 	new_file=/data/home/testabc5 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:32 test-pc kernel: [ 2335.564355][T35922] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:32 test-pc kernel: [ 2335.564356][T35922] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:32 test-pc kernel: [ 2335.564358][T35922] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:31:32 test-pc kernel: [ 2335.564358][T35922] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:33 test-pc kernel: [ 2335.564360][T35922] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35922 		comm=/usr/bin/mv 	old_file=/data/home/test/abc5 	new_file=/data/home/testabc55 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:33 test-pc kernel: [ 2336.540704][T35937] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:33 test-pc kernel: [ 2336.540705][T35937] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:33 test-pc kernel: [ 2336.540706][T35937] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:31:33 test-pc kernel: [ 2336.540707][T35937] dlp_file_pro: new_file_path=(null)
+Oct 10 15:32:42 test-pc kernel: [ 2336.540708][T35937] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35937 		comm=/usr/bin/mv 	old_file=/data/home/test/abc55 	new_file=/data/home/testabc5 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:32:42 test-pc kernel: [ 2404.632384][T37198] Security Module dlp_file_pro removed
+Oct 10 15:32:42 test-pc kernel: [ 2404.632390][T37198] dlp_file_pro module exit
+Oct 10 15:32:42 test-pc kernel: [ 2404.673723][T37202] dlp_file_pro module initializing.
+Oct 10 15:32:42 test-pc kernel: [ 2404.673726][T37202] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:32:42 test-pc kernel: [ 2404.673726][T37202] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:32:42 test-pc kernel: [ 2404.673732][T37202] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:33:04 test-pc kernel: [ 2426.961505][T37912] Security Module dlp_file_pro removed
+Oct 10 15:33:04 test-pc kernel: [ 2426.961511][T37912] dlp_file_pro module exit
+Oct 10 15:33:04 test-pc kernel: [ 2427.009504][T37916] dlp_file_pro module initializing.
+Oct 10 15:33:04 test-pc kernel: [ 2427.009507][T37916] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:33:04 test-pc kernel: [ 2427.009507][T37916] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:33:04 test-pc kernel: [ 2427.009513][T37916] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:33:08 test-pc kernel: [ 2429.445734][T37928] dlp_file_pro: rename sensitive file 				uid=1000 pid=37928 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/testabc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:33:08 test-pc kernel: [ 2430.594236][T37934] dlp_file_pro: rename sensitive file 				uid=1000 pid=37934 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/testabc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:33:09 test-pc kernel: [ 2431.558172][T37938] dlp_file_pro: rename sensitive file 				uid=1000 pid=37938 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/testabc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:33:10 test-pc kernel: [ 2432.312190][T37944] dlp_file_pro: rename sensitive file 				uid=1000 pid=37944 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/testabc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:11 test-pc kernel: [ 2433.294166][T37948] dlp_file_pro: rename sensitive file 				uid=1000 pid=37948 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/testabc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:11 test-pc kernel: [ 2493.904798][T38924] Security Module dlp_file_pro removed
+Oct 10 15:34:11 test-pc kernel: [ 2493.904803][T38924] dlp_file_pro module exit
+Oct 10 15:34:11 test-pc kernel: [ 2493.940511][T38928] dlp_file_pro module initializing.
+Oct 10 15:34:11 test-pc kernel: [ 2493.940514][T38928] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:34:11 test-pc kernel: [ 2493.940515][T38928] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:34:11 test-pc kernel: [ 2493.940521][T38928] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:34:13 test-pc kernel: [ 2495.351016][T38934] dlp_file_pro: rename sensitive file 				uid=1000 pid=38934 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:14 test-pc kernel: [ 2496.371161][T38941] dlp_file_pro: rename sensitive file 				uid=1000 pid=38941 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:15 test-pc kernel: [ 2497.305131][T38954] dlp_file_pro: rename sensitive file 				uid=1000 pid=38954 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:16 test-pc kernel: [ 2498.152270][T38958] dlp_file_pro: rename sensitive file 				uid=1000 pid=38958 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:17 test-pc kernel: [ 2499.085353][T38965] dlp_file_pro: rename sensitive file 				uid=1000 pid=38965 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:39 test-pc kernel: [ 2499.965748][T38969] dlp_file_pro: rename sensitive file 				uid=1000 pid=38969 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:39 test-pc kernel: [ 2522.245332][T39734] Security Module dlp_file_pro removed
+Oct 10 15:34:39 test-pc kernel: [ 2522.245338][T39734] dlp_file_pro module exit
+Oct 10 15:34:39 test-pc kernel: [ 2522.276300][T39738] dlp_file_pro module initializing.
+Oct 10 15:34:39 test-pc kernel: [ 2522.276304][T39738] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:34:39 test-pc kernel: [ 2522.276304][T39738] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:34:39 test-pc kernel: [ 2522.276311][T39738] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:34:41 test-pc kernel: [ 2523.290642][T39750] dlp_file_pro: rename sensitive file uid=1000 pid=39750 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:42 test-pc kernel: [ 2524.293334][T39754] dlp_file_pro: rename sensitive file uid=1000 pid=39754 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:43 test-pc kernel: [ 2525.160732][T39758] dlp_file_pro: rename sensitive file uid=1000 pid=39758 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:44 test-pc kernel: [ 2526.039757][T39762] dlp_file_pro: rename sensitive file uid=1000 pid=39762 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:45 test-pc kernel: [ 2526.838768][T39766] dlp_file_pro: rename sensitive file uid=1000 pid=39766 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:36:56 test-pc kernel: [ 2527.762405][T39770] dlp_file_pro: rename sensitive file uid=1000 pid=39770 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:39:08 test-pc kernel: [ 2772.939592][T41152] dlp_file_pro: rename sensitive file uid=1000 pid=41152 comm=/usr/bin/mv old_file=/data/home/test/abc4 new_file=/data/home/test/abc44 old_dir_ino=3932162 inode_ino=3939945
+Oct 10 15:39:19 test-pc kernel: [ 2791.380369][T41237] dlp_file_pro: rename sensitive file uid=1000 pid=41237 comm=/usr/bin/mv old_file=/data/home/test/abc44 new_file=/data/home/test/abc4 old_dir_ino=3932162 inode_ino=3939945
+Oct 10 15:44:14 test-pc kernel: [ 3078.114845][T43681] dlp_file_pro: rename sensitive file uid=1000 pid=43681 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc555 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:44:38 test-pc kernel: [ 3097.263879][T43764] dlp_file_pro: rename sensitive file uid=1000 pid=43764 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3941267
+Oct 10 16:40:06 test-pc kernel: [ 6432.258504][T67473] dlp_file_pro: rename sensitive file uid=1000 pid=67473 comm=/usr/bin/mv old_file=/data/home/test/abc555 new_file=/data/home/test/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa old_dir_ino=3932162 inode_ino=3939923
+Oct 10 16:44:33 test-pc kernel: [ 6449.091701][T67562] dlp_file_pro: rename sensitive file uid=1000 pid=67562 comm=/usr/bin/mv old_file=/data/home/test/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa new_file=/data/home/test/abc555 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 16:46:13 test-pc kernel: [ 6816.378356][T74913] ky_dlp module initializing.
+Oct 10 16:46:13 test-pc kernel: [ 6816.378360][T74913] Security Module ky_dlp loaded with 4 hooks
+Oct 10 16:46:13 test-pc kernel: [ 6816.378360][T74913] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 16:46:13 test-pc kernel: [ 6816.378366][T74913] ky_dlp kernel module sysfs init successfully.
+Oct 10 16:46:18 test-pc kernel: [ 6821.142279][T74931] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:20 test-pc kernel: [ 6822.809271][T74938] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:32 test-pc kernel: [ 6835.331664][T74980] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:33 test-pc kernel: [ 6836.384615][T74989] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:34 test-pc kernel: [ 6837.489179][T74993] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:37 test-pc kernel: [ 6839.976649][T75003] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:38 test-pc kernel: [ 6841.140123][T75009] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:39 test-pc kernel: [ 6842.183623][T75013] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:40 test-pc kernel: [ 6843.143855][T75017] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:41 test-pc kernel: [ 6844.040980][T75021] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:43 test-pc kernel: [ 6845.907674][T75028] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:44 test-pc kernel: [ 6847.199751][T75032] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:46 test-pc kernel: [ 6848.923802][T75044] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:49:12 test-pc kernel: [ 6995.509387][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:12 test-pc kernel: [ 6995.509444][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:17 test-pc kernel: [ 6999.708827][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:17 test-pc kernel: [ 6999.708916][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:17 test-pc kernel: [ 6999.721975][T75989] ky_dlp_ko: /usr/bin/vim.basic is opening usb file in RDONLY mode 
+Oct 10 16:49:34 test-pc kernel: [ 7017.523185][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:34 test-pc kernel: [ 7017.523382][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:34 test-pc kernel: [ 7017.523631][T75989] ky_dlp_ko: /usr/bin/vim.basic is opening usb file in RDONLY mode 
+Oct 10 16:50:04 test-pc kernel: [ 7046.901667][T76172] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:04 test-pc kernel: [ 7046.901726][T76172] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:14 test-pc kernel: [ 7057.140670][T76211] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:14 test-pc kernel: [ 7057.140726][T76211] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:20 test-pc kernel: [ 7062.944914][T76211] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:20 test-pc kernel: [ 7062.945004][T76211] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:20 test-pc kernel: [ 7062.956064][T76211] ky_dlp_ko: /usr/bin/vim.basic is opening usb file in RDONLY mode 
+Oct 10 16:51:02 test-pc kernel: [ 7105.460233][T76399] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 16:51:06 test-pc kernel: [ 7109.510910][T76412] ky_dlp_ko: /usr/bin/touch is not permitted to write usb device.
+Oct 10 16:51:10 test-pc kernel: [ 7113.329043][T76430] ky_dlp_ko: /usr/bin/touch is not permitted to write usb device.
+Oct 10 16:51:14 test-pc kernel: [ 7116.911489][T76440] ky_dlp_ko: /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:01:27 test-pc kernel: [ 7729.703262][T80506] Security Module ky_dlp removed
+Oct 10 17:01:27 test-pc kernel: [ 7729.703266][T80506] ky_dlp module exit
+Oct 10 17:01:27 test-pc kernel: [ 7729.749119][T80510] ky_dlp module initializing.
+Oct 10 17:01:27 test-pc kernel: [ 7729.749123][T80510] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:01:27 test-pc kernel: [ 7729.749124][T80510] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:01:27 test-pc kernel: [ 7729.749129][T80510] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:02:03 test-pc kernel: [ 7766.412968][T80701] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:02:07 test-pc kernel: [ 7770.440746][T80714] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:02:12 test-pc kernel: [ 7774.691094][T80734] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:02:15 test-pc kernel: [ 7777.715800][T80744] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:02:22 test-pc kernel: [ 7784.795783][T80845] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:24 test-pc kernel: [ 7787.361689][T80855] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:26 test-pc kernel: [ 7789.200995][T80862] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:28 test-pc kernel: [ 7790.815828][T80866] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:30 test-pc kernel: [ 7792.575655][T80873] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:33 test-pc kernel: [ 7796.033601][T80893] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:36 test-pc kernel: [ 7798.854034][T80908] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:04:09 test-pc kernel: [ 7892.447778][T82083] Security Module ky_dlp removed
+Oct 10 17:04:09 test-pc kernel: [ 7892.447782][T82083] ky_dlp module exit
+Oct 10 17:04:26 test-pc kernel: [ 7909.098840][T82775] ky_dlp module initializing.
+Oct 10 17:04:26 test-pc kernel: [ 7909.098844][T82775] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:04:26 test-pc kernel: [ 7909.098844][T82775] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:04:26 test-pc kernel: [ 7909.098849][T82775] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:04:31 test-pc kernel: [ 7914.288229][T82798] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:04:34 test-pc kernel: [ 7917.153244][T82813] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:04:35 test-pc kernel: [ 7918.502753][T82820] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:05:51 test-pc kernel: [ 7993.627976][T83949] Security Module ky_dlp removed
+Oct 10 17:05:51 test-pc kernel: [ 7993.627981][T83949] ky_dlp module exit
+Oct 10 17:05:51 test-pc kernel: [ 7993.676957][T83953] ky_dlp module initializing.
+Oct 10 17:05:51 test-pc kernel: [ 7993.676961][T83953] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:05:51 test-pc kernel: [ 7993.676961][T83953] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:05:51 test-pc kernel: [ 7993.676967][T83953] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:05:54 test-pc kernel: [ 7997.044938][T83965] ky_dlp: ======= / 
+Oct 10 17:05:54 test-pc kernel: [ 7997.044939][T83965] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:05:57 test-pc kernel: [ 8000.454559][T83984] ky_dlp: ======= / 
+Oct 10 17:05:57 test-pc kernel: [ 8000.454560][T83984] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:05:59 test-pc kernel: [ 8002.009163][T83991] ky_dlp: ======= / 
+Oct 10 17:05:59 test-pc kernel: [ 8002.009164][T83991] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:09:56 test-pc kernel: [ 8239.545740][T85461] Security Module ky_dlp removed
+Oct 10 17:09:56 test-pc kernel: [ 8239.545745][T85461] ky_dlp module exit
+Oct 10 17:09:57 test-pc kernel: [ 8239.601735][T85465] ky_dlp module initializing.
+Oct 10 17:09:57 test-pc kernel: [ 8239.601738][T85465] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:09:57 test-pc kernel: [ 8239.601739][T85465] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:09:57 test-pc kernel: [ 8239.601745][T85465] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:09:57 test-pc kernel: [ 8240.244512][T85480] ky_dlp: ======= / 
+Oct 10 17:09:57 test-pc kernel: [ 8240.244515][T85480] ky_dlp: ======= / 
+Oct 10 17:09:57 test-pc kernel: [ 8240.244516][T85480] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:09:59 test-pc kernel: [ 8241.782395][T85484] ky_dlp: ======= / 
+Oct 10 17:09:59 test-pc kernel: [ 8241.782398][T85484] ky_dlp: ======= / 
+Oct 10 17:09:59 test-pc kernel: [ 8241.782399][T85484] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:10:00 test-pc kernel: [ 8242.598849][T85488] ky_dlp: ======= / 
+Oct 10 17:10:00 test-pc kernel: [ 8242.598852][T85488] ky_dlp: ======= / 
+Oct 10 17:10:00 test-pc kernel: [ 8242.598853][T85488] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:29:22 test-pc kernel: [ 9404.763809][T92709] Security Module ky_dlp removed
+Oct 10 17:29:22 test-pc kernel: [ 9404.763815][T92709] ky_dlp module exit
+Oct 10 17:30:15 test-pc kernel: [ 9457.661340][T93758] ky_dlp module initializing.
+Oct 10 17:30:15 test-pc kernel: [ 9457.661344][T93758] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:30:15 test-pc kernel: [ 9457.661344][T93758] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:30:15 test-pc kernel: [ 9457.661350][T93758] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:30:24 test-pc kernel: [ 9467.016611][T93841] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device file=abcaaf12323112321 .
+Oct 10 17:30:26 test-pc kernel: [ 9469.252985][T93870] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device file=abcaaf12323112321 .
+Oct 10 17:30:37 test-pc kernel: [ 9480.528987][T93969] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device file=abcaaf12323112321 .
+Oct 10 17:30:53 test-pc kernel: [ 9496.385881][T94135] ky_dlp_ko:inode_create  /usr/bin/cp is not permitted to write usb device file=abc555 .
+Oct 10 17:31:03 test-pc kernel: [ 9505.752956][T94183] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 17:34:01 test-pc kernel: [ 9684.474020][T95704] Security Module ky_dlp removed
+Oct 10 17:34:01 test-pc kernel: [ 9684.474025][T95704] ky_dlp module exit
+Oct 10 17:34:01 test-pc kernel: [ 9684.497068][T95708] ky_dlp module initializing.
+Oct 10 17:34:01 test-pc kernel: [ 9684.497071][T95708] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:34:01 test-pc kernel: [ 9684.497072][T95708] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:34:01 test-pc kernel: [ 9684.497077][T95708] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:34:13 test-pc kernel: [ 9696.401609][T95752] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 17:34:29 test-pc kernel: [ 9712.022598][T95807] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:32 test-pc kernel: [ 9714.898171][T95814] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:38 test-pc kernel: [ 9720.710664][T95841] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:39 test-pc kernel: [ 9722.059860][T95848] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:40 test-pc kernel: [ 9723.540441][T95852] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:42 test-pc kernel: [ 9724.606168][T95859] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:38:02 test-pc kernel: [ 9924.663975][T97687] Security Module ky_dlp removed
+Oct 10 17:38:02 test-pc kernel: [ 9924.663980][T97687] ky_dlp module exit
+Oct 10 17:38:02 test-pc kernel: [ 9924.693014][T97691] ky_dlp module initializing.
+Oct 10 17:38:02 test-pc kernel: [ 9924.693017][T97691] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:38:02 test-pc kernel: [ 9924.693017][T97691] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:38:02 test-pc kernel: [ 9924.693023][T97691] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:38:10 test-pc kernel: [ 9932.574831][T97743] ky_dlp_ko:inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc uid=1000  
+Oct 10 17:38:18 test-pc kernel: [ 9940.808573][T97926] ky_dlp_ko:inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc uid=1000  
+Oct 10 17:38:22 test-pc kernel: [ 9945.521249][T98105] ky_dlp_ko:inode_create  /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000  
+Oct 10 17:38:31 test-pc kernel: [ 9953.732411][T98153] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device. file=abcaaf12323112321 uid=1000  
+Oct 10 17:38:40 test-pc kernel: [ 9963.319441][T98186] ky_dlp_ko:inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc uid=1000  
+Oct 10 17:44:21 test-pc kernel: [10303.976009][T100977] Security Module ky_dlp removed
+Oct 10 17:44:21 test-pc kernel: [10303.976014][T100977] ky_dlp module exit
+Oct 10 17:45:29 test-pc kernel: [10371.901347][T102511] ky_dlp module initializing.
+Oct 10 17:45:29 test-pc kernel: [10371.901351][T102511] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:45:29 test-pc kernel: [10371.901352][T102511] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:45:29 test-pc kernel: [10371.901358][T102511] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:45:34 test-pc kernel: [10377.526383][T102535] ky_dlp_ko:inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc uid=1000  
+Oct 10 17:45:37 test-pc kernel: [10379.946737][T102547] ky_dlp_ko:inode_create /usr/bin/touch is not permitted to write usb device. file=abcaaf12323112321 uid=1000 
+Oct 10 17:46:09 test-pc kernel: [10411.908721][T102673] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 17:46:12 test-pc kernel: [10415.010557][T102688] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 17:46:13 test-pc kernel: [10416.007320][T102692] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 17:46:14 test-pc kernel: [10416.939654][T102696] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 17:46:26 test-pc kernel: [10428.788113][T102735] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 18:40:38 test-pc kernel: [13681.482719][T122646] Modules linked in: ky_dlp(OE) uas usb_storage dlp_file_pro(OE) st iptable_filter rfcomm cmac algif_hash vboxnetadp(OE) algif_skcipher vboxnetflt(OE) af_alg vboxdrv(OE) bnep snd_soc_skl_hda_dsp snd_soc_intel_hda_dsp_common snd_soc_hdac_hdmi snd_soc_dmic hid_generic x86_pkg_temp_thermal intel_powerclamp mei_hdcp coretemp intel_rapl_msr kvm_intel kvm snd_hda_codec_hdmi snd_hda_codec_realtek snd_hda_codec_generic crct10dif_pclmul crc32_pclmul snd_sof_pci snd_sof_intel_byt snd_sof_intel_ipc snd_sof_intel_hda_common snd_soc_hdac_hda ghash_clmulni_intel snd_sof_xtensa_dsp snd_sof_intel_hda snd_sof iwlmvm snd_hda_ext_core rapl snd_soc_acpi_intel_match uvcvideo intel_cstate snd_soc_acpi btusb videobuf2_vmalloc btrtl snd_soc_core videobuf2_memops videobuf2_v4l2 mac80211 usbhid btbcm snd_compress videobuf2_common btintel ac97_bus bluetooth joydev snd_pcm_dmaengine videodev snd_hda_intel wmi_bmof libarc4 mc hid snd_intel_dspcfg ecdh_generic ecc intel_wmi_thunderbolt
+Oct 10 18:40:38 test-pc kernel: [13681.482761][T122646]  snd_hda_codec e1000e snd_hda_core iwlwifi snd_hwdep snd_pcm thunderbolt thinkpad_acpi nvram ledtrig_audio cfg80211 mei_me intel_pch_thermal snd_seq_midi mei snd_seq_midi_event processor_thermal_device intel_rapl_common snd_rawmidi intel_soc_dts_iosf ucsi_acpi typec_ucsi typec snd_seq snd_seq_device snd_timer snd soundcore int3403_thermal int340x_thermal_zone intel_hid int3400_thermal sparse_keymap acpi_thermal_rel acpi_pad sch_fq_codel vmwgfx ttm parport_pc ppdev lp parport ramoops reed_solomon efi_pstore ip_tables x_tables autofs4 nls_iso8859_1 multipath linear rtsx_pci_sdmmc i915 aesni_intel glue_helper crypto_simd cryptd input_leds psmouse serio_raw nvme i2c_algo_bit drm_kms_helper syscopyarea sysfillrect sysimgblt fb_sys_fops cec nvme_core drm rtsx_pci wmi video pinctrl_cannonlake mac_hid [last unloaded: ky_dlp]
+Oct 11 09:12:28 test-pc dbus-daemon[128494]: [session uid=1000 pid=128492] [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 11 10:42:46 test-pc kernel: [71408.720729][T168593] Modules linked in: ky_dlp(OE) uas usb_storage dlp_file_pro(OE) st iptable_filter rfcomm cmac algif_hash vboxnetadp(OE) algif_skcipher vboxnetflt(OE) af_alg vboxdrv(OE) bnep snd_soc_skl_hda_dsp snd_soc_intel_hda_dsp_common snd_soc_hdac_hdmi snd_soc_dmic hid_generic x86_pkg_temp_thermal intel_powerclamp mei_hdcp coretemp intel_rapl_msr kvm_intel kvm snd_hda_codec_hdmi snd_hda_codec_realtek snd_hda_codec_generic crct10dif_pclmul crc32_pclmul snd_sof_pci snd_sof_intel_byt snd_sof_intel_ipc snd_sof_intel_hda_common snd_soc_hdac_hda ghash_clmulni_intel snd_sof_xtensa_dsp snd_sof_intel_hda snd_sof iwlmvm snd_hda_ext_core rapl snd_soc_acpi_intel_match uvcvideo intel_cstate snd_soc_acpi btusb videobuf2_vmalloc btrtl snd_soc_core videobuf2_memops videobuf2_v4l2 mac80211 usbhid btbcm snd_compress videobuf2_common btintel ac97_bus bluetooth joydev snd_pcm_dmaengine videodev snd_hda_intel wmi_bmof libarc4 mc hid snd_intel_dspcfg ecdh_generic ecc intel_wmi_thunderbolt
+Oct 11 10:42:46 test-pc kernel: [71408.720767][T168593]  snd_hda_codec e1000e snd_hda_core iwlwifi snd_hwdep snd_pcm thunderbolt thinkpad_acpi nvram ledtrig_audio cfg80211 mei_me intel_pch_thermal snd_seq_midi mei snd_seq_midi_event processor_thermal_device intel_rapl_common snd_rawmidi intel_soc_dts_iosf ucsi_acpi typec_ucsi typec snd_seq snd_seq_device snd_timer snd soundcore int3403_thermal int340x_thermal_zone intel_hid int3400_thermal sparse_keymap acpi_thermal_rel acpi_pad sch_fq_codel vmwgfx ttm parport_pc ppdev lp parport ramoops reed_solomon efi_pstore ip_tables x_tables autofs4 nls_iso8859_1 multipath linear rtsx_pci_sdmmc i915 aesni_intel glue_helper crypto_simd cryptd input_leds psmouse serio_raw nvme i2c_algo_bit drm_kms_helper syscopyarea sysfillrect sysimgblt fb_sys_fops cec nvme_core drm rtsx_pci wmi video pinctrl_cannonlake mac_hid [last unloaded: ky_dlp]
+Oct 11 10:42:46 test-pc kernel: [71408.720805][T168593] CPU: 1 PID: 168593 Comm: kydlp-d Tainted: G        W  OE     5.10.0-8-generic #33~v10pro-KYLINOS
+Oct 11 10:42:46 test-pc kernel: [71408.720830][T168593]  get_hash+0x57/0xf0 [dlp_file_pro]
+Oct 11 10:42:46 test-pc kernel: [71408.720831][T168593]  control_by_blacklist+0xa6/0xf0 [dlp_file_pro]
+Oct 11 10:42:46 test-pc kernel: [71408.720840][T168593]  dlp_file_open+0xab/0x110 [dlp_file_pro]
+Oct 11 11:12:19 test-pc kernel: [73181.447888][T130498] [   3487]     0  3487   137832        0   126976      315             0 kydlp-control
+Oct 11 11:12:19 test-pc kernel: [73181.448355][T130498] [ 168590]     0 168590  9456827  2413803 53301248  4082944             0 kydlp-d
+Oct 11 11:12:19 test-pc kernel: [73181.448378][T130498] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-40.scope,task=kydlp-d,pid=168590,uid=0
+Oct 11 11:12:19 test-pc kernel: [73181.448423][T130498] Out of memory: Killed process 168590 (kydlp-d) total-vm:37827308kB, anon-rss:9655212kB, file-rss:0kB, shmem-rss:0kB, UID:0 pgtables:52052kB oom_score_adj:0
+Oct 11 11:12:20 test-pc kernel: [73183.334456][   T63] oom_reaper: reaped process 168590 (kydlp-d), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Oct 10 14:11:03 test-pc kernel: [160639.899296][T515738] dlp_file_pro: user[1000] task[mv]  rename sensitive file: [abc5] 
+Oct 10 14:15:58 test-pc kernel: [160652.891987][T515868] dlp_file_pro: user[1000] task[mv]  rename sensitive file: [bac55] 
+Oct 10 14:19:50 test-pc kernel: [161179.124745][T521603] Security Module dlp_file_pro removed
+Oct 10 14:19:50 test-pc kernel: [161179.124750][T521603] dlp_file_pro module exit
+Oct 10 14:19:50 test-pc kernel: [161179.180979][T521607] dlp_file_pro module initializing.
+Oct 10 14:19:50 test-pc kernel: [161179.180982][T521607] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:19:50 test-pc kernel: [161179.180982][T521607] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:19:50 test-pc kernel: [161179.180990][T521607] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:20:13 test-pc kernel: [161194.913504][T521751] dlp_file_pro: uid=1000 pid=521751 comm=mv rename sensitive file: [abc5] 
+Oct 10 14:20:16 test-pc kernel: [161202.870550][T521793] dlp_file_pro: uid=1000 pid=521793 comm=mv rename sensitive file: [abc55] 
+Oct 10 14:20:17 test-pc kernel: [161205.176810][T521810] dlp_file_pro: uid=1000 pid=521810 comm=mv rename sensitive file: [abc5] 
+Oct 10 14:20:18 test-pc kernel: [161206.217889][T521814] dlp_file_pro: uid=1000 pid=521814 comm=mv rename sensitive file: [abc55] 
+Oct 10 14:20:18 test-pc kernel: [161207.177583][T521821] dlp_file_pro: uid=1000 pid=521821 comm=mv rename sensitive file: [abc5] 
+Oct 10 14:25:45 test-pc kernel: [161208.058699][T521822] dlp_file_pro: uid=1000 pid=521822 comm=mv rename sensitive file: [abc55] 
+Oct 10 14:25:45 test-pc kernel: [161534.970693][T525711] Security Module dlp_file_pro removed
+Oct 10 14:25:45 test-pc kernel: [161534.970698][T525711] dlp_file_pro module exit
+Oct 10 14:25:45 test-pc kernel: [161535.025387][T525715] dlp_file_pro module initializing.
+Oct 10 14:25:45 test-pc kernel: [161535.025391][T525715] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:25:45 test-pc kernel: [161535.025391][T525715] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:25:45 test-pc kernel: [161535.025397][T525715] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:26:07 test-pc kernel: [161551.359131][T525869] dlp_file_pro: uid=1000 pid=525869 comm=/usr/bin/mv rename sensitive file: [abc5] to [abc55]
+Oct 10 14:26:09 test-pc kernel: [161556.892136][T525898] dlp_file_pro: uid=1000 pid=525898 comm=/usr/bin/mv rename sensitive file: [abc55] to [abc5]
+Oct 10 14:26:10 test-pc kernel: [161558.404922][T525905] dlp_file_pro: uid=1000 pid=525905 comm=/usr/bin/mv rename sensitive file: [abc5] to [abc55]
+Oct 10 14:26:11 test-pc kernel: [161559.339937][T525912] dlp_file_pro: uid=1000 pid=525912 comm=/usr/bin/mv rename sensitive file: [abc55] to [abc5]
+Oct 10 14:26:12 test-pc kernel: [161560.304801][T525916] dlp_file_pro: uid=1000 pid=525916 comm=/usr/bin/mv rename sensitive file: [abc5] to [abc55]
+Oct 10 14:39:01 test-pc kernel: [161561.124382][T525923] dlp_file_pro: uid=1000 pid=525923 comm=/usr/bin/mv rename sensitive file: [abc55] to [abc5]
+Oct 10 14:39:01 test-pc kernel: [162330.208733][T533201] Security Module dlp_file_pro removed
+Oct 10 14:39:01 test-pc kernel: [162330.208740][T533201] dlp_file_pro module exit
+Oct 10 14:39:01 test-pc kernel: [162330.254268][T533210] dlp_file_pro module initializing.
+Oct 10 14:39:01 test-pc kernel: [162330.254272][T533210] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:39:01 test-pc kernel: [162330.254272][T533210] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:39:01 test-pc kernel: [162330.254280][T533210] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:39:47 test-pc kernel: [162372.121449][T533548] dlp_file_pro: uid=1000 pid=533548 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162
+Oct 10 14:40:52 test-pc kernel: [162376.806549][T533573] dlp_file_pro: uid=1000 pid=533573 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162
+Oct 10 14:40:54 test-pc kernel: [162442.023455][T534015] dlp_file_pro: uid=1000 pid=534015 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162
+Oct 10 14:41:57 test-pc kernel: [162443.096707][T534022] dlp_file_pro: uid=1000 pid=534022 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162
+Oct 10 14:45:44 test-pc kernel: [162506.276532][T534656] dlp_file_pro: uid=1000 pid=534656 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162
+Oct 10 14:45:44 test-pc kernel: [162733.522751][T537345] Security Module dlp_file_pro removed
+Oct 10 14:45:44 test-pc kernel: [162733.522758][T537345] dlp_file_pro module exit
+Oct 10 14:45:44 test-pc kernel: [162733.562840][T537349] dlp_file_pro module initializing.
+Oct 10 14:45:44 test-pc kernel: [162733.562843][T537349] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:45:44 test-pc kernel: [162733.562844][T537349] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:45:44 test-pc kernel: [162733.562850][T537349] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:45:48 test-pc kernel: [162736.660448][T537373] dlp_file_pro: uid=1000 pid=537373 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162 den_ino=3939923
+Oct 10 14:47:45 test-pc kernel: [162737.953104][T537377] dlp_file_pro: uid=1000 pid=537377 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162 den_ino=3939923
+Oct 10 14:47:45 test-pc kernel: [162854.191898][T539726] Security Module dlp_file_pro removed
+Oct 10 14:47:45 test-pc kernel: [162854.191904][T539726] dlp_file_pro module exit
+Oct 10 14:47:45 test-pc kernel: [162854.234359][T539730] dlp_file_pro module initializing.
+Oct 10 14:47:45 test-pc kernel: [162854.234363][T539730] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:47:45 test-pc kernel: [162854.234363][T539730] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:47:45 test-pc kernel: [162854.234370][T539730] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:49:52 test-pc kernel: [162981.453849][T540754] RIP: 0010:dlp_file_rename+0x117/0x140 [dlp_file_pro]
+Oct 10 14:49:52 test-pc kernel: [162981.453886][T540754] Modules linked in: dlp_file_pro(OE) binfmt_misc st iptable_filter rfcomm cmac algif_hash algif_skcipher vboxnetadp(OE) af_alg vboxnetflt(OE) vboxdrv(OE) bnep snd_soc_skl_hda_dsp snd_soc_intel_hda_dsp_common snd_soc_hdac_hdmi snd_soc_dmic snd_hda_codec_hdmi hid_generic snd_hda_codec_realtek mei_hdcp snd_hda_codec_generic intel_rapl_msr snd_sof_pci snd_sof_intel_byt snd_sof_intel_ipc snd_sof_intel_hda_common iwlmvm x86_pkg_temp_thermal snd_soc_hdac_hda intel_powerclamp snd_sof_xtensa_dsp coretemp snd_sof_intel_hda mac80211 snd_sof kvm_intel kvm crct10dif_pclmul snd_hda_ext_core snd_soc_acpi_intel_match snd_soc_acpi crc32_pclmul snd_soc_core libarc4 snd_compress ac97_bus ghash_clmulni_intel snd_pcm_dmaengine rapl snd_hda_intel intel_cstate snd_intel_dspcfg joydev uvcvideo snd_hda_codec snd_hda_core videobuf2_vmalloc btusb usbhid thinkpad_acpi btrtl videobuf2_memops snd_hwdep videobuf2_v4l2 btbcm iwlwifi nvram videobuf2_common hid btintel ledtrig_audio
+Oct 10 14:49:52 test-pc kernel: [162981.453917][T540754]  intel_wmi_thunderbolt videodev wmi_bmof bluetooth thunderbolt snd_pcm e1000e mc ecdh_generic ecc snd_seq_midi snd_seq_midi_event cfg80211 processor_thermal_device mei_me ucsi_acpi intel_rapl_common typec_ucsi mei intel_soc_dts_iosf intel_pch_thermal typec snd_rawmidi snd_seq snd_seq_device snd_timer snd soundcore int3403_thermal int340x_thermal_zone intel_hid int3400_thermal acpi_pad acpi_thermal_rel sparse_keymap sch_fq_codel vmwgfx ttm parport_pc ppdev lp parport ramoops reed_solomon efi_pstore ip_tables x_tables autofs4 nls_iso8859_1 multipath linear rtsx_pci_sdmmc i915 aesni_intel glue_helper crypto_simd cryptd psmouse input_leds serio_raw i2c_algo_bit nvme drm_kms_helper syscopyarea sysfillrect nvme_core sysimgblt fb_sys_fops cec drm rtsx_pci wmi video pinctrl_cannonlake mac_hid [last unloaded: dlp_file_pro]
+Oct 10 14:49:52 test-pc kernel: [162981.636095][T540754] RIP: 0010:dlp_file_rename+0x117/0x140 [dlp_file_pro]
+Oct 10 14:52:41 test-pc systemd-modules-load[1680]: Failed to insert module 'ky_dlp': No such file or directory
+Oct 10 14:52:41 test-pc systemd[1]: Starting kylin dlp control...
+Oct 10 14:52:41 test-pc dbus-daemon[3138]: [system] [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 10 14:52:41 test-pc systemd[1]: Started kylin dlp control.
+Oct 10 14:52:41 test-pc dbus-daemon[3138]: [system] [bus_registry_acquire_service] service com.kylin.dlp.TransControl has a unique name :1.14
+Oct 10 14:52:41 test-pc bash[3487]: 重置状态失败：open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:42 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [3206] 
+Oct 10 14:52:42 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:42 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [3206] 
+Oct 10 14:52:42 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:42 test-pc python3[3206]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:42 test-pc python3[3206]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4254] 
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4254] 
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:43 test-pc python3[4254]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:43 test-pc python3[4254]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4472] 
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4472] 
+Oct 10 14:52:43 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:43 test-pc python3[4472]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:43 test-pc python3[4472]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4603] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4603] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc python3[4603]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc python3[4603]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc dbus-daemon[4653]: [session uid=1000 pid=4653] [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4659] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4659] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc dbus-daemon[4748]: [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 10 14:52:44 test-pc python3[4659]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc python3[4659]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4802] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call Introspect on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:We found a LIMIT file: com.kylin.dlp.TransControl.limit， client [/usr/bin/hedron-domain-hook.py] with pid [4802] 
+Oct 10 14:52:44 test-pc dbus-daemon[3138]: [system] [limitCtl]:/usr/bin/hedron-domain-hook.py can call GetConfig on service com.kylin.dlp.TransControl
+Oct 10 14:52:44 test-pc python3[4802]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:44 test-pc python3[4802]: dbus.exceptions.DBusException: com.kylin.dlp.TransControl.ErrorType: open /sys/kernel/security/dlp/usb_check_status: no such file or directory
+Oct 10 14:52:46 test-pc dbus-daemon[5630]: [limitCtl]: full_limit_name is /etc/dbus-1/conf/com.kylin.dlp.TransControl.limit, id is 2
+Oct 10 14:59:29 test-pc kernel: [  411.789357][T11988] dlp_file_pro module initializing.
+Oct 10 14:59:29 test-pc kernel: [  411.789361][T11988] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 14:59:29 test-pc kernel: [  411.789361][T11988] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 14:59:29 test-pc kernel: [  411.789368][T11988] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 14:59:59 test-pc kernel: [  434.432205][T12144] dlp_file_pro: uid=1000 pid=12144 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:00:00 test-pc kernel: [  442.072948][T12181] dlp_file_pro: uid=1000 pid=12181 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:00:01 test-pc kernel: [  443.308826][T12186] dlp_file_pro: uid=1000 pid=12186 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:00:02 test-pc kernel: [  444.218486][T12192] dlp_file_pro: uid=1000 pid=12192 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:00:03 test-pc kernel: [  445.483980][T12220] dlp_file_pro: uid=1000 pid=12220 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:02:00 test-pc kernel: [  446.546444][T12224] dlp_file_pro: uid=1000 pid=12224 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 old_ino=3932162  new_ino=3932162 old_dentry_ino=3939923 new_dentry_ino=3939923
+Oct 10 15:02:00 test-pc kernel: [  563.548959][T13664] Security Module dlp_file_pro removed
+Oct 10 15:02:00 test-pc kernel: [  563.548966][T13664] dlp_file_pro module exit
+Oct 10 15:02:01 test-pc kernel: [  563.608485][T13668] dlp_file_pro module initializing.
+Oct 10 15:02:01 test-pc kernel: [  563.608489][T13668] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:02:01 test-pc kernel: [  563.608489][T13668] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:02:01 test-pc kernel: [  563.608496][T13668] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:02:20 test-pc kernel: [  577.741047][T13732] dlp_file_pro: uid=1000 pid=13732 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:21 test-pc kernel: [  582.835649][T13752] dlp_file_pro: uid=1000 pid=13752 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:22 test-pc kernel: [  584.255907][T13761] dlp_file_pro: uid=1000 pid=13761 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:23 test-pc kernel: [  585.178756][T13765] dlp_file_pro: uid=1000 pid=13765 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:24 test-pc kernel: [  585.967743][T13769] dlp_file_pro: uid=1000 pid=13769 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:02:25 test-pc kernel: [  586.839519][T13773] dlp_file_pro: uid=1000 pid=13773 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:40 test-pc kernel: [  587.639839][T13774] dlp_file_pro: uid=1000 pid=13774 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:40 test-pc kernel: [ 1383.187084][T18968] Security Module dlp_file_pro removed
+Oct 10 15:15:40 test-pc kernel: [ 1383.187091][T18968] dlp_file_pro module exit
+Oct 10 15:15:40 test-pc kernel: [ 1383.264257][T18972] dlp_file_pro module initializing.
+Oct 10 15:15:40 test-pc kernel: [ 1383.264260][T18972] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:15:40 test-pc kernel: [ 1383.264260][T18972] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:15:40 test-pc kernel: [ 1383.264267][T18972] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:15:43 test-pc kernel: [ 1386.343750][T18985] dlp_file_pro: uid=1000 pid=18985 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:45 test-pc kernel: [ 1386.343753][T18985] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:15:45 test-pc kernel: [ 1387.637146][T19058] dlp_file_pro: uid=1000 pid=19058 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:46 test-pc kernel: [ 1387.637149][T19058] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:15:46 test-pc kernel: [ 1388.633956][T19123] dlp_file_pro: uid=1000 pid=19123 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:15:46 test-pc kernel: [ 1388.633959][T19123] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:15:46 test-pc kernel: [ 1389.488928][T19127] dlp_file_pro: uid=1000 pid=19127 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:47 test-pc kernel: [ 1389.488931][T19127] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:47 test-pc kernel: [ 1450.112463][T20431] Security Module dlp_file_pro removed
+Oct 10 15:16:47 test-pc kernel: [ 1450.112468][T20431] dlp_file_pro module exit
+Oct 10 15:16:47 test-pc kernel: [ 1450.157783][T20435] dlp_file_pro module initializing.
+Oct 10 15:16:47 test-pc kernel: [ 1450.157787][T20435] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:16:47 test-pc kernel: [ 1450.157787][T20435] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:16:47 test-pc kernel: [ 1450.157795][T20435] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:16:56 test-pc kernel: [ 1458.765178][T20463] dlp_file_pro: uid=1000 pid=20463 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:56 test-pc kernel: [ 1458.765180][T20463] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:57 test-pc kernel: [ 1458.765181][T20463] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:16:57 test-pc kernel: [ 1459.818938][T20467] dlp_file_pro: uid=1000 pid=20467 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:57 test-pc kernel: [ 1459.818940][T20467] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:57 test-pc kernel: [ 1459.818941][T20467] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:16:57 test-pc kernel: [ 1460.558451][T20480] dlp_file_pro: uid=1000 pid=20480 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:57 test-pc kernel: [ 1460.558454][T20480] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:58 test-pc kernel: [ 1460.558455][T20480] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:16:58 test-pc kernel: [ 1461.324536][T20484] dlp_file_pro: uid=1000 pid=20484 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:58 test-pc kernel: [ 1461.324539][T20484] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:16:59 test-pc kernel: [ 1461.324540][T20484] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:16:59 test-pc kernel: [ 1462.166936][T20488] dlp_file_pro: uid=1000 pid=20488 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:16:59 test-pc kernel: [ 1462.166939][T20488] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:17:00 test-pc kernel: [ 1462.166940][T20488] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:17:00 test-pc kernel: [ 1462.885131][T20490] dlp_file_pro: uid=1000 pid=20490 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:17:00 test-pc kernel: [ 1462.885134][T20490] dlp_file_pro: old_path=/data/home/test
+Oct 10 15:19:44 test-pc kernel: [ 1462.885135][T20490] dlp_file_pro: new_path=/data/home/test
+Oct 10 15:19:44 test-pc kernel: [ 1626.791025][T21774] Security Module dlp_file_pro removed
+Oct 10 15:19:44 test-pc kernel: [ 1626.791030][T21774] dlp_file_pro module exit
+Oct 10 15:19:44 test-pc kernel: [ 1626.817188][T21778] dlp_file_pro module initializing.
+Oct 10 15:19:44 test-pc kernel: [ 1626.817192][T21778] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:19:44 test-pc kernel: [ 1626.817192][T21778] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:19:44 test-pc kernel: [ 1626.817199][T21778] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:19:47 test-pc kernel: [ 1629.883151][T21799] dlp_file_pro: uid=1000 pid=21799 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:47 test-pc kernel: [ 1629.883153][T21799] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:47 test-pc kernel: [ 1629.883154][T21799] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:48 test-pc kernel: [ 1629.883155][T21799] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:19:48 test-pc kernel: [ 1630.821272][T21803] dlp_file_pro: uid=1000 pid=21803 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:48 test-pc kernel: [ 1630.821275][T21803] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:48 test-pc kernel: [ 1630.821275][T21803] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:49 test-pc kernel: [ 1630.821276][T21803] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:19:49 test-pc kernel: [ 1631.831137][T21807] dlp_file_pro: uid=1000 pid=21807 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:49 test-pc kernel: [ 1631.831140][T21807] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:49 test-pc kernel: [ 1631.831141][T21807] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:50 test-pc kernel: [ 1631.831142][T21807] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:19:50 test-pc kernel: [ 1632.695039][T21819] dlp_file_pro: uid=1000 pid=21819 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:50 test-pc kernel: [ 1632.695041][T21819] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:50 test-pc kernel: [ 1632.695042][T21819] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:51 test-pc kernel: [ 1632.695043][T21819] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:19:51 test-pc kernel: [ 1633.729363][T21823] dlp_file_pro: uid=1000 pid=21823 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:51 test-pc kernel: [ 1633.729365][T21823] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:51 test-pc kernel: [ 1633.729366][T21823] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:52 test-pc kernel: [ 1633.729367][T21823] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:19:52 test-pc kernel: [ 1634.647465][T21827] dlp_file_pro: uid=1000 pid=21827 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:52 test-pc kernel: [ 1634.647467][T21827] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:52 test-pc kernel: [ 1634.647468][T21827] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:57 test-pc kernel: [ 1634.647469][T21827] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:19:57 test-pc kernel: [ 1640.051252][T21911] dlp_file_pro: uid=1000 pid=21911 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:57 test-pc kernel: [ 1640.051274][T21911] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:57 test-pc kernel: [ 1640.051275][T21911] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:57 test-pc kernel: [ 1640.051275][T21911] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:19:58 test-pc kernel: [ 1640.940530][T21953] dlp_file_pro: uid=1000 pid=21953 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:19:58 test-pc kernel: [ 1640.940533][T21953] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:19:58 test-pc kernel: [ 1640.940534][T21953] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:19:58 test-pc kernel: [ 1640.940534][T21953] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:18 test-pc kernel: [ 1781.111197][T31784] Security Module dlp_file_pro removed
+Oct 10 15:22:18 test-pc kernel: [ 1781.111202][T31784] dlp_file_pro module exit
+Oct 10 15:22:18 test-pc kernel: [ 1781.145743][T31788] dlp_file_pro module initializing.
+Oct 10 15:22:18 test-pc kernel: [ 1781.145747][T31788] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:22:18 test-pc kernel: [ 1781.145747][T31788] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:22:18 test-pc kernel: [ 1781.145754][T31788] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:22:25 test-pc kernel: [ 1788.547182][T31818] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:25 test-pc kernel: [ 1788.547183][T31818] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:25 test-pc kernel: [ 1788.547184][T31818] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:25 test-pc kernel: [ 1788.547185][T31818] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:26 test-pc kernel: [ 1788.547186][T31818] dlp_file_pro: uid=1000 pid=31818 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:26 test-pc kernel: [ 1789.415813][T31822] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:26 test-pc kernel: [ 1789.415814][T31822] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:26 test-pc kernel: [ 1789.415815][T31822] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:26 test-pc kernel: [ 1789.415816][T31822] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:27 test-pc kernel: [ 1789.415817][T31822] dlp_file_pro: uid=1000 pid=31822 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:27 test-pc kernel: [ 1790.213338][T31826] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:27 test-pc kernel: [ 1790.213339][T31826] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:27 test-pc kernel: [ 1790.213340][T31826] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:27 test-pc kernel: [ 1790.213341][T31826] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:28 test-pc kernel: [ 1790.213342][T31826] dlp_file_pro: uid=1000 pid=31826 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:28 test-pc kernel: [ 1790.933158][T31830] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:28 test-pc kernel: [ 1790.933160][T31830] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:28 test-pc kernel: [ 1790.933161][T31830] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:28 test-pc kernel: [ 1790.933161][T31830] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:29 test-pc kernel: [ 1790.933162][T31830] dlp_file_pro: uid=1000 pid=31830 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:29 test-pc kernel: [ 1791.771638][T31834] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:29 test-pc kernel: [ 1791.771640][T31834] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:29 test-pc kernel: [ 1791.771641][T31834] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:29 test-pc kernel: [ 1791.771641][T31834] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:29 test-pc kernel: [ 1791.771643][T31834] dlp_file_pro: uid=1000 pid=31834 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:29 test-pc kernel: [ 1792.484163][T31835] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:29 test-pc kernel: [ 1792.484164][T31835] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:29 test-pc kernel: [ 1792.484165][T31835] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:29 test-pc kernel: [ 1792.484166][T31835] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:30 test-pc kernel: [ 1792.484167][T31835] dlp_file_pro: uid=1000 pid=31835 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:30 test-pc kernel: [ 1793.255196][T31839] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:30 test-pc kernel: [ 1793.255198][T31839] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:30 test-pc kernel: [ 1793.255199][T31839] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:30 test-pc kernel: [ 1793.255199][T31839] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:31 test-pc kernel: [ 1793.255201][T31839] dlp_file_pro: uid=1000 pid=31839 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:31 test-pc kernel: [ 1794.047283][T31843] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:31 test-pc kernel: [ 1794.047285][T31843] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:31 test-pc kernel: [ 1794.047286][T31843] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:31 test-pc kernel: [ 1794.047287][T31843] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:32 test-pc kernel: [ 1794.047288][T31843] dlp_file_pro: uid=1000 pid=31843 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:32 test-pc kernel: [ 1794.783763][T31847] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:32 test-pc kernel: [ 1794.783764][T31847] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:32 test-pc kernel: [ 1794.783765][T31847] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:32 test-pc kernel: [ 1794.783766][T31847] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:34 test-pc kernel: [ 1794.783767][T31847] dlp_file_pro: uid=1000 pid=31847 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:34 test-pc kernel: [ 1796.916433][T31860] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:34 test-pc kernel: [ 1796.916435][T31860] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:34 test-pc kernel: [ 1796.916436][T31860] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:34 test-pc kernel: [ 1796.916436][T31860] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:35 test-pc kernel: [ 1796.916437][T31860] dlp_file_pro: uid=1000 pid=31860 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:35 test-pc kernel: [ 1797.799978][T31864] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:35 test-pc kernel: [ 1797.799979][T31864] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:35 test-pc kernel: [ 1797.799980][T31864] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:35 test-pc kernel: [ 1797.799981][T31864] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:36 test-pc kernel: [ 1797.799982][T31864] dlp_file_pro: uid=1000 pid=31864 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:36 test-pc kernel: [ 1798.640269][T31865] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:36 test-pc kernel: [ 1798.640271][T31865] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:36 test-pc kernel: [ 1798.640272][T31865] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:36 test-pc kernel: [ 1798.640272][T31865] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:36 test-pc kernel: [ 1798.640273][T31865] dlp_file_pro: uid=1000 pid=31865 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:36 test-pc kernel: [ 1799.481819][T31869] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:36 test-pc kernel: [ 1799.481821][T31869] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:36 test-pc kernel: [ 1799.481822][T31869] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:22:36 test-pc kernel: [ 1799.481822][T31869] dlp_file_pro: new_file_path=(null)
+Oct 10 15:22:37 test-pc kernel: [ 1799.481823][T31869] dlp_file_pro: uid=1000 pid=31869 comm=/usr/bin/mv rename sensitive file old_file=abc5 new_file=abc55 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:22:37 test-pc kernel: [ 1800.248344][T31875] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:22:37 test-pc kernel: [ 1800.248346][T31875] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:22:37 test-pc kernel: [ 1800.248347][T31875] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:22:37 test-pc kernel: [ 1800.248347][T31875] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:26 test-pc kernel: [ 1800.248367][T31875] dlp_file_pro: uid=1000 pid=31875 comm=/usr/bin/mv rename sensitive file old_file=abc55 new_file=abc5 dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:26 test-pc kernel: [ 2329.021865][T35841] Security Module dlp_file_pro removed
+Oct 10 15:31:26 test-pc kernel: [ 2329.021889][T35841] dlp_file_pro module exit
+Oct 10 15:31:26 test-pc kernel: [ 2329.061569][T35845] dlp_file_pro module initializing.
+Oct 10 15:31:26 test-pc kernel: [ 2329.061573][T35845] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:31:26 test-pc kernel: [ 2329.061573][T35845] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:31:26 test-pc kernel: [ 2329.061580][T35845] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:31:29 test-pc kernel: [ 2331.931858][T35879] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:29 test-pc kernel: [ 2331.931860][T35879] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:29 test-pc kernel: [ 2331.931861][T35879] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:31:29 test-pc kernel: [ 2331.931861][T35879] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:30 test-pc kernel: [ 2331.931863][T35879] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35879 		comm=/usr/bin/mv 	old_file=/data/home/test/abc5 	new_file=/data/home/testabc55 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:30 test-pc kernel: [ 2332.852435][T35886] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:30 test-pc kernel: [ 2332.852437][T35886] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:30 test-pc kernel: [ 2332.852438][T35886] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:31:30 test-pc kernel: [ 2332.852439][T35886] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:31 test-pc kernel: [ 2332.852440][T35886] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35886 		comm=/usr/bin/mv 	old_file=/data/home/test/abc55 	new_file=/data/home/testabc5 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:31 test-pc kernel: [ 2333.652744][T35905] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:31 test-pc kernel: [ 2333.652746][T35905] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:31 test-pc kernel: [ 2333.652747][T35905] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:31:31 test-pc kernel: [ 2333.652747][T35905] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:32 test-pc kernel: [ 2333.652748][T35905] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35905 		comm=/usr/bin/mv 	old_file=/data/home/test/abc5 	new_file=/data/home/testabc55 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:32 test-pc kernel: [ 2334.602813][T35918] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:32 test-pc kernel: [ 2334.602815][T35918] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:32 test-pc kernel: [ 2334.602816][T35918] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:31:32 test-pc kernel: [ 2334.602817][T35918] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:32 test-pc kernel: [ 2334.602818][T35918] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35918 		comm=/usr/bin/mv 	old_file=/data/home/test/abc55 	new_file=/data/home/testabc5 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:32 test-pc kernel: [ 2335.564355][T35922] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:32 test-pc kernel: [ 2335.564356][T35922] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:32 test-pc kernel: [ 2335.564358][T35922] dlp_file_pro: old_file_path=/data/home/test/abc5
+Oct 10 15:31:32 test-pc kernel: [ 2335.564358][T35922] dlp_file_pro: new_file_path=(null)
+Oct 10 15:31:33 test-pc kernel: [ 2335.564360][T35922] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35922 		comm=/usr/bin/mv 	old_file=/data/home/test/abc5 	new_file=/data/home/testabc55 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:31:33 test-pc kernel: [ 2336.540704][T35937] dlp_file_pro: old_dir=/data/home/test
+Oct 10 15:31:33 test-pc kernel: [ 2336.540705][T35937] dlp_file_pro: new_dir=/data/home/test
+Oct 10 15:31:33 test-pc kernel: [ 2336.540706][T35937] dlp_file_pro: old_file_path=/data/home/test/abc55
+Oct 10 15:31:33 test-pc kernel: [ 2336.540707][T35937] dlp_file_pro: new_file_path=(null)
+Oct 10 15:32:42 test-pc kernel: [ 2336.540708][T35937] dlp_file_pro: rename sensitive file 				uid=1000 	pid=35937 		comm=/usr/bin/mv 	old_file=/data/home/test/abc55 	new_file=/data/home/testabc5 				old_dir_ino=3932162  inode_ino=3939923 
+Oct 10 15:32:42 test-pc kernel: [ 2404.632384][T37198] Security Module dlp_file_pro removed
+Oct 10 15:32:42 test-pc kernel: [ 2404.632390][T37198] dlp_file_pro module exit
+Oct 10 15:32:42 test-pc kernel: [ 2404.673723][T37202] dlp_file_pro module initializing.
+Oct 10 15:32:42 test-pc kernel: [ 2404.673726][T37202] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:32:42 test-pc kernel: [ 2404.673726][T37202] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:32:42 test-pc kernel: [ 2404.673732][T37202] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:33:04 test-pc kernel: [ 2426.961505][T37912] Security Module dlp_file_pro removed
+Oct 10 15:33:04 test-pc kernel: [ 2426.961511][T37912] dlp_file_pro module exit
+Oct 10 15:33:04 test-pc kernel: [ 2427.009504][T37916] dlp_file_pro module initializing.
+Oct 10 15:33:04 test-pc kernel: [ 2427.009507][T37916] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:33:04 test-pc kernel: [ 2427.009507][T37916] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:33:04 test-pc kernel: [ 2427.009513][T37916] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:33:08 test-pc kernel: [ 2429.445734][T37928] dlp_file_pro: rename sensitive file 				uid=1000 pid=37928 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/testabc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:33:08 test-pc kernel: [ 2430.594236][T37934] dlp_file_pro: rename sensitive file 				uid=1000 pid=37934 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/testabc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:33:09 test-pc kernel: [ 2431.558172][T37938] dlp_file_pro: rename sensitive file 				uid=1000 pid=37938 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/testabc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:33:10 test-pc kernel: [ 2432.312190][T37944] dlp_file_pro: rename sensitive file 				uid=1000 pid=37944 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/testabc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:11 test-pc kernel: [ 2433.294166][T37948] dlp_file_pro: rename sensitive file 				uid=1000 pid=37948 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/testabc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:11 test-pc kernel: [ 2493.904798][T38924] Security Module dlp_file_pro removed
+Oct 10 15:34:11 test-pc kernel: [ 2493.904803][T38924] dlp_file_pro module exit
+Oct 10 15:34:11 test-pc kernel: [ 2493.940511][T38928] dlp_file_pro module initializing.
+Oct 10 15:34:11 test-pc kernel: [ 2493.940514][T38928] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:34:11 test-pc kernel: [ 2493.940515][T38928] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:34:11 test-pc kernel: [ 2493.940521][T38928] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:34:13 test-pc kernel: [ 2495.351016][T38934] dlp_file_pro: rename sensitive file 				uid=1000 pid=38934 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:14 test-pc kernel: [ 2496.371161][T38941] dlp_file_pro: rename sensitive file 				uid=1000 pid=38941 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:15 test-pc kernel: [ 2497.305131][T38954] dlp_file_pro: rename sensitive file 				uid=1000 pid=38954 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:16 test-pc kernel: [ 2498.152270][T38958] dlp_file_pro: rename sensitive file 				uid=1000 pid=38958 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:17 test-pc kernel: [ 2499.085353][T38965] dlp_file_pro: rename sensitive file 				uid=1000 pid=38965 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:39 test-pc kernel: [ 2499.965748][T38969] dlp_file_pro: rename sensitive file 				uid=1000 pid=38969 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:39 test-pc kernel: [ 2522.245332][T39734] Security Module dlp_file_pro removed
+Oct 10 15:34:39 test-pc kernel: [ 2522.245338][T39734] dlp_file_pro module exit
+Oct 10 15:34:39 test-pc kernel: [ 2522.276300][T39738] dlp_file_pro module initializing.
+Oct 10 15:34:39 test-pc kernel: [ 2522.276304][T39738] Security Module dlp_file_pro loaded with 2 hooks
+Oct 10 15:34:39 test-pc kernel: [ 2522.276304][T39738] dlp_file_pro kernel module add LSM hooks successfully.
+Oct 10 15:34:39 test-pc kernel: [ 2522.276311][T39738] dlp_file_pro kernel module sysfs init successfully.
+Oct 10 15:34:41 test-pc kernel: [ 2523.290642][T39750] dlp_file_pro: rename sensitive file uid=1000 pid=39750 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:42 test-pc kernel: [ 2524.293334][T39754] dlp_file_pro: rename sensitive file uid=1000 pid=39754 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:43 test-pc kernel: [ 2525.160732][T39758] dlp_file_pro: rename sensitive file uid=1000 pid=39758 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:44 test-pc kernel: [ 2526.039757][T39762] dlp_file_pro: rename sensitive file uid=1000 pid=39762 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:34:45 test-pc kernel: [ 2526.838768][T39766] dlp_file_pro: rename sensitive file uid=1000 pid=39766 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:36:56 test-pc kernel: [ 2527.762405][T39770] dlp_file_pro: rename sensitive file uid=1000 pid=39770 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc55 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:39:08 test-pc kernel: [ 2772.939592][T41152] dlp_file_pro: rename sensitive file uid=1000 pid=41152 comm=/usr/bin/mv old_file=/data/home/test/abc4 new_file=/data/home/test/abc44 old_dir_ino=3932162 inode_ino=3939945
+Oct 10 15:39:19 test-pc kernel: [ 2791.380369][T41237] dlp_file_pro: rename sensitive file uid=1000 pid=41237 comm=/usr/bin/mv old_file=/data/home/test/abc44 new_file=/data/home/test/abc4 old_dir_ino=3932162 inode_ino=3939945
+Oct 10 15:44:14 test-pc kernel: [ 3078.114845][T43681] dlp_file_pro: rename sensitive file uid=1000 pid=43681 comm=/usr/bin/mv old_file=/data/home/test/abc5 new_file=/data/home/test/abc555 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 15:44:38 test-pc kernel: [ 3097.263879][T43764] dlp_file_pro: rename sensitive file uid=1000 pid=43764 comm=/usr/bin/mv old_file=/data/home/test/abc55 new_file=/data/home/test/abc5 old_dir_ino=3932162 inode_ino=3941267
+Oct 10 16:40:06 test-pc kernel: [ 6432.258504][T67473] dlp_file_pro: rename sensitive file uid=1000 pid=67473 comm=/usr/bin/mv old_file=/data/home/test/abc555 new_file=/data/home/test/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa old_dir_ino=3932162 inode_ino=3939923
+Oct 10 16:44:33 test-pc kernel: [ 6449.091701][T67562] dlp_file_pro: rename sensitive file uid=1000 pid=67562 comm=/usr/bin/mv old_file=/data/home/test/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa new_file=/data/home/test/abc555 old_dir_ino=3932162 inode_ino=3939923
+Oct 10 16:46:13 test-pc kernel: [ 6816.378356][T74913] ky_dlp module initializing.
+Oct 10 16:46:13 test-pc kernel: [ 6816.378360][T74913] Security Module ky_dlp loaded with 4 hooks
+Oct 10 16:46:13 test-pc kernel: [ 6816.378360][T74913] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 16:46:13 test-pc kernel: [ 6816.378366][T74913] ky_dlp kernel module sysfs init successfully.
+Oct 10 16:46:18 test-pc kernel: [ 6821.142279][T74931] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:20 test-pc kernel: [ 6822.809271][T74938] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:32 test-pc kernel: [ 6835.331664][T74980] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:33 test-pc kernel: [ 6836.384615][T74989] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:34 test-pc kernel: [ 6837.489179][T74993] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:37 test-pc kernel: [ 6839.976649][T75003] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:38 test-pc kernel: [ 6841.140123][T75009] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:39 test-pc kernel: [ 6842.183623][T75013] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:40 test-pc kernel: [ 6843.143855][T75017] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:41 test-pc kernel: [ 6844.040980][T75021] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:43 test-pc kernel: [ 6845.907674][T75028] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:44 test-pc kernel: [ 6847.199751][T75032] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:46:46 test-pc kernel: [ 6848.923802][T75044] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 16:49:12 test-pc kernel: [ 6995.509387][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:12 test-pc kernel: [ 6995.509444][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:17 test-pc kernel: [ 6999.708827][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:17 test-pc kernel: [ 6999.708916][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:17 test-pc kernel: [ 6999.721975][T75989] ky_dlp_ko: /usr/bin/vim.basic is opening usb file in RDONLY mode 
+Oct 10 16:49:34 test-pc kernel: [ 7017.523185][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:34 test-pc kernel: [ 7017.523382][T75989] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:49:34 test-pc kernel: [ 7017.523631][T75989] ky_dlp_ko: /usr/bin/vim.basic is opening usb file in RDONLY mode 
+Oct 10 16:50:04 test-pc kernel: [ 7046.901667][T76172] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:04 test-pc kernel: [ 7046.901726][T76172] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:14 test-pc kernel: [ 7057.140670][T76211] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:14 test-pc kernel: [ 7057.140726][T76211] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:20 test-pc kernel: [ 7062.944914][T76211] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:20 test-pc kernel: [ 7062.945004][T76211] ky_dlp_ko: /usr/bin/vim.basic is not permitted to write usb device.
+Oct 10 16:50:20 test-pc kernel: [ 7062.956064][T76211] ky_dlp_ko: /usr/bin/vim.basic is opening usb file in RDONLY mode 
+Oct 10 16:51:02 test-pc kernel: [ 7105.460233][T76399] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 16:51:06 test-pc kernel: [ 7109.510910][T76412] ky_dlp_ko: /usr/bin/touch is not permitted to write usb device.
+Oct 10 16:51:10 test-pc kernel: [ 7113.329043][T76430] ky_dlp_ko: /usr/bin/touch is not permitted to write usb device.
+Oct 10 16:51:14 test-pc kernel: [ 7116.911489][T76440] ky_dlp_ko: /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:01:27 test-pc kernel: [ 7729.703262][T80506] Security Module ky_dlp removed
+Oct 10 17:01:27 test-pc kernel: [ 7729.703266][T80506] ky_dlp module exit
+Oct 10 17:01:27 test-pc kernel: [ 7729.749119][T80510] ky_dlp module initializing.
+Oct 10 17:01:27 test-pc kernel: [ 7729.749123][T80510] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:01:27 test-pc kernel: [ 7729.749124][T80510] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:01:27 test-pc kernel: [ 7729.749129][T80510] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:02:03 test-pc kernel: [ 7766.412968][T80701] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:02:07 test-pc kernel: [ 7770.440746][T80714] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:02:12 test-pc kernel: [ 7774.691094][T80734] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:02:15 test-pc kernel: [ 7777.715800][T80744] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:02:22 test-pc kernel: [ 7784.795783][T80845] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:24 test-pc kernel: [ 7787.361689][T80855] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:26 test-pc kernel: [ 7789.200995][T80862] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:28 test-pc kernel: [ 7790.815828][T80866] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:30 test-pc kernel: [ 7792.575655][T80873] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:33 test-pc kernel: [ 7796.033601][T80893] ky_dlp_ko: /usr/bin/touch is opening usb file in RDONLY mode 
+Oct 10 17:02:36 test-pc kernel: [ 7798.854034][T80908] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:04:09 test-pc kernel: [ 7892.447778][T82083] Security Module ky_dlp removed
+Oct 10 17:04:09 test-pc kernel: [ 7892.447782][T82083] ky_dlp module exit
+Oct 10 17:04:26 test-pc kernel: [ 7909.098840][T82775] ky_dlp module initializing.
+Oct 10 17:04:26 test-pc kernel: [ 7909.098844][T82775] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:04:26 test-pc kernel: [ 7909.098844][T82775] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:04:26 test-pc kernel: [ 7909.098849][T82775] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:04:31 test-pc kernel: [ 7914.288229][T82798] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:04:34 test-pc kernel: [ 7917.153244][T82813] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:04:35 test-pc kernel: [ 7918.502753][T82820] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:05:51 test-pc kernel: [ 7993.627976][T83949] Security Module ky_dlp removed
+Oct 10 17:05:51 test-pc kernel: [ 7993.627981][T83949] ky_dlp module exit
+Oct 10 17:05:51 test-pc kernel: [ 7993.676957][T83953] ky_dlp module initializing.
+Oct 10 17:05:51 test-pc kernel: [ 7993.676961][T83953] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:05:51 test-pc kernel: [ 7993.676961][T83953] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:05:51 test-pc kernel: [ 7993.676967][T83953] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:05:54 test-pc kernel: [ 7997.044938][T83965] ky_dlp: ======= / 
+Oct 10 17:05:54 test-pc kernel: [ 7997.044939][T83965] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:05:57 test-pc kernel: [ 8000.454559][T83984] ky_dlp: ======= / 
+Oct 10 17:05:57 test-pc kernel: [ 8000.454560][T83984] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:05:59 test-pc kernel: [ 8002.009163][T83991] ky_dlp: ======= / 
+Oct 10 17:05:59 test-pc kernel: [ 8002.009164][T83991] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:09:56 test-pc kernel: [ 8239.545740][T85461] Security Module ky_dlp removed
+Oct 10 17:09:56 test-pc kernel: [ 8239.545745][T85461] ky_dlp module exit
+Oct 10 17:09:57 test-pc kernel: [ 8239.601735][T85465] ky_dlp module initializing.
+Oct 10 17:09:57 test-pc kernel: [ 8239.601738][T85465] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:09:57 test-pc kernel: [ 8239.601739][T85465] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:09:57 test-pc kernel: [ 8239.601745][T85465] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:09:57 test-pc kernel: [ 8240.244512][T85480] ky_dlp: ======= / 
+Oct 10 17:09:57 test-pc kernel: [ 8240.244515][T85480] ky_dlp: ======= / 
+Oct 10 17:09:57 test-pc kernel: [ 8240.244516][T85480] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:09:59 test-pc kernel: [ 8241.782395][T85484] ky_dlp: ======= / 
+Oct 10 17:09:59 test-pc kernel: [ 8241.782398][T85484] ky_dlp: ======= / 
+Oct 10 17:09:59 test-pc kernel: [ 8241.782399][T85484] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:10:00 test-pc kernel: [ 8242.598849][T85488] ky_dlp: ======= / 
+Oct 10 17:10:00 test-pc kernel: [ 8242.598852][T85488] ky_dlp: ======= / 
+Oct 10 17:10:00 test-pc kernel: [ 8242.598853][T85488] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device.
+Oct 10 17:29:22 test-pc kernel: [ 9404.763809][T92709] Security Module ky_dlp removed
+Oct 10 17:29:22 test-pc kernel: [ 9404.763815][T92709] ky_dlp module exit
+Oct 10 17:30:15 test-pc kernel: [ 9457.661340][T93758] ky_dlp module initializing.
+Oct 10 17:30:15 test-pc kernel: [ 9457.661344][T93758] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:30:15 test-pc kernel: [ 9457.661344][T93758] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:30:15 test-pc kernel: [ 9457.661350][T93758] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:30:24 test-pc kernel: [ 9467.016611][T93841] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device file=abcaaf12323112321 .
+Oct 10 17:30:26 test-pc kernel: [ 9469.252985][T93870] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device file=abcaaf12323112321 .
+Oct 10 17:30:37 test-pc kernel: [ 9480.528987][T93969] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device file=abcaaf12323112321 .
+Oct 10 17:30:53 test-pc kernel: [ 9496.385881][T94135] ky_dlp_ko:inode_create  /usr/bin/cp is not permitted to write usb device file=abc555 .
+Oct 10 17:31:03 test-pc kernel: [ 9505.752956][T94183] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 17:34:01 test-pc kernel: [ 9684.474020][T95704] Security Module ky_dlp removed
+Oct 10 17:34:01 test-pc kernel: [ 9684.474025][T95704] ky_dlp module exit
+Oct 10 17:34:01 test-pc kernel: [ 9684.497068][T95708] ky_dlp module initializing.
+Oct 10 17:34:01 test-pc kernel: [ 9684.497071][T95708] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:34:01 test-pc kernel: [ 9684.497072][T95708] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:34:01 test-pc kernel: [ 9684.497077][T95708] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:34:13 test-pc kernel: [ 9696.401609][T95752] ky_dlp_ko: /usr/bin/cp is opening usb file in RDONLY mode 
+Oct 10 17:34:29 test-pc kernel: [ 9712.022598][T95807] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:32 test-pc kernel: [ 9714.898171][T95814] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:38 test-pc kernel: [ 9720.710664][T95841] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:39 test-pc kernel: [ 9722.059860][T95848] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:40 test-pc kernel: [ 9723.540441][T95852] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:34:42 test-pc kernel: [ 9724.606168][T95859] ky_dlp_ko: inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc
+Oct 10 17:38:02 test-pc kernel: [ 9924.663975][T97687] Security Module ky_dlp removed
+Oct 10 17:38:02 test-pc kernel: [ 9924.663980][T97687] ky_dlp module exit
+Oct 10 17:38:02 test-pc kernel: [ 9924.693014][T97691] ky_dlp module initializing.
+Oct 10 17:38:02 test-pc kernel: [ 9924.693017][T97691] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:38:02 test-pc kernel: [ 9924.693017][T97691] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:38:02 test-pc kernel: [ 9924.693023][T97691] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:38:10 test-pc kernel: [ 9932.574831][T97743] ky_dlp_ko:inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc uid=1000  
+Oct 10 17:38:18 test-pc kernel: [ 9940.808573][T97926] ky_dlp_ko:inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc uid=1000  
+Oct 10 17:38:22 test-pc kernel: [ 9945.521249][T98105] ky_dlp_ko:inode_create  /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000  
+Oct 10 17:38:31 test-pc kernel: [ 9953.732411][T98153] ky_dlp_ko:inode_create  /usr/bin/touch is not permitted to write usb device. file=abcaaf12323112321 uid=1000  
+Oct 10 17:38:40 test-pc kernel: [ 9963.319441][T98186] ky_dlp_ko:inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc uid=1000  
+Oct 10 17:44:21 test-pc kernel: [10303.976009][T100977] Security Module ky_dlp removed
+Oct 10 17:44:21 test-pc kernel: [10303.976014][T100977] ky_dlp module exit
+Oct 10 17:45:29 test-pc kernel: [10371.901347][T102511] ky_dlp module initializing.
+Oct 10 17:45:29 test-pc kernel: [10371.901351][T102511] Security Module ky_dlp loaded with 4 hooks
+Oct 10 17:45:29 test-pc kernel: [10371.901352][T102511] ky_dlp kernel module add LSM hooks successfully.
+Oct 10 17:45:29 test-pc kernel: [10371.901358][T102511] ky_dlp kernel module sysfs init successfully.
+Oct 10 17:45:34 test-pc kernel: [10377.526383][T102535] ky_dlp_ko:inode_unlink /usr/bin/rm is not permitted to write usb device. file=abc uid=1000  
+Oct 10 17:45:37 test-pc kernel: [10379.946737][T102547] ky_dlp_ko:inode_create /usr/bin/touch is not permitted to write usb device. file=abcaaf12323112321 uid=1000 
+Oct 10 17:46:09 test-pc kernel: [10411.908721][T102673] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 17:46:12 test-pc kernel: [10415.010557][T102688] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 17:46:13 test-pc kernel: [10416.007320][T102692] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 17:46:14 test-pc kernel: [10416.939654][T102696] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 17:46:26 test-pc kernel: [10428.788113][T102735] ky_dlp_ko:inode_create /usr/bin/cp is not permitted to write usb device. file=abc555 uid=1000 
+Oct 10 18:40:38 test-pc kernel: [13681.482719][T122646] Modules linked in: ky_dlp(OE) uas usb_storage dlp_file_pro(OE) st iptable_filter rfcomm cmac algif_hash vboxnetadp(OE) algif_skcipher vboxnetflt(OE) af_alg vboxdrv(OE) bnep snd_soc_skl_hda_dsp snd_soc_intel_hda_dsp_common snd_soc_hdac_hdmi snd_soc_dmic hid_generic x86_pkg_temp_thermal intel_powerclamp mei_hdcp coretemp intel_rapl_msr kvm_intel kvm snd_hda_codec_hdmi snd_hda_codec_realtek snd_hda_codec_generic crct10dif_pclmul crc32_pclmul snd_sof_pci snd_sof_intel_byt snd_sof_intel_ipc snd_sof_intel_hda_common snd_soc_hdac_hda ghash_clmulni_intel snd_sof_xtensa_dsp snd_sof_intel_hda snd_sof iwlmvm snd_hda_ext_core rapl snd_soc_acpi_intel_match uvcvideo intel_cstate snd_soc_acpi btusb videobuf2_vmalloc btrtl snd_soc_core videobuf2_memops videobuf2_v4l2 mac80211 usbhid btbcm snd_compress videobuf2_common btintel ac97_bus bluetooth joydev snd_pcm_dmaengine videodev snd_hda_intel wmi_bmof libarc4 mc hid snd_intel_dspcfg ecdh_generic ecc intel_wmi_thunderbolt
+Oct 10 18:40:38 test-pc kernel: [13681.482761][T122646]  snd_hda_codec e1000e snd_hda_core iwlwifi snd_hwdep snd_pcm thunderbolt thinkpad_acpi nvram ledtrig_audio cfg80211 mei_me intel_pch_thermal snd_seq_midi mei snd_seq_midi_event processor_thermal_device intel_rapl_common snd_rawmidi intel_soc_dts_iosf ucsi_acpi typec_ucsi typec snd_seq snd_seq_device snd_timer snd soundcore int3403_thermal int340x_thermal_zone intel_hid int3400_thermal sparse_keymap acpi_thermal_rel acpi_pad sch_fq_codel vmwgfx ttm parport_pc ppdev lp parport ramoops reed_solomon efi_pstore ip_tables x_tables autofs4 nls_iso8859_1 multipath linear rtsx_pci_sdmmc i915 aesni_intel glue_helper crypto_simd cryptd input_leds psmouse serio_raw nvme i2c_algo_bit drm_kms_helper syscopyarea sysfillrect sysimgblt fb_sys_fops cec nvme_core drm rtsx_pci wmi video pinctrl_cannonlake mac_hid [last unloaded: ky_dlp]
+May 24 00:56:54 test-pc kernel: [312149.431602][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 00:57:05 test-pc kernel: [312159.988050][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 00:57:05 test-pc kernel: [312160.266098][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 00:57:05 test-pc kernel: [312160.266378][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 00:57:05 test-pc kernel: [312160.266509][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 00:57:05 test-pc kernel: [312160.267153][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 00:57:05 test-pc kernel: [312160.267290][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 00:57:05 test-pc kernel: [312160.267912][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 00:57:05 test-pc kernel: [312160.268043][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 00:57:05 test-pc kernel: [312160.268635][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 00:57:05 test-pc kernel: [312160.268767][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 00:57:05 test-pc kernel: [312160.269365][ T4492] [file ======  kydlp-control----------- ]
+May 24 00:57:05 test-pc kernel: [312160.269538][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 00:57:06 test-pc kernel: [312161.178189][ T4492] [file ======  kylin-dlp-send----------- ]
+May 24 00:57:07 test-pc kernel: [312162.696524][ T4492] [file ======  kydlp-send----------- ]
+May 24 00:57:13 test-pc kernel: [312168.682915][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 01:57:25 test-pc kernel: [315780.845212][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 01:57:36 test-pc kernel: [315791.379682][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 01:57:36 test-pc kernel: [315791.697937][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 01:57:36 test-pc kernel: [315791.698214][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 01:57:36 test-pc kernel: [315791.698378][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 01:57:36 test-pc kernel: [315791.699177][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 01:57:36 test-pc kernel: [315791.699364][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 01:57:36 test-pc kernel: [315791.700598][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 01:57:36 test-pc kernel: [315791.700793][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 01:57:36 test-pc kernel: [315791.701738][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 01:57:36 test-pc kernel: [315791.701915][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 01:57:36 test-pc kernel: [315791.702785][ T4492] [file ======  kydlp-control----------- ]
+May 24 01:57:36 test-pc kernel: [315791.703060][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 01:57:37 test-pc kernel: [315792.556498][ T4492] [file ======  kylin-dlp-send----------- ]
+May 24 01:57:39 test-pc kernel: [315794.305644][ T4492] [file ======  kydlp-send----------- ]
+May 24 01:57:45 test-pc kernel: [315800.506790][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 02:57:56 test-pc kernel: [319411.593061][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 02:58:07 test-pc kernel: [319421.950183][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 02:58:07 test-pc kernel: [319422.264616][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 02:58:07 test-pc kernel: [319422.264910][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 02:58:07 test-pc kernel: [319422.265054][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 02:58:07 test-pc kernel: [319422.266020][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 02:58:07 test-pc kernel: [319422.266172][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 02:58:07 test-pc kernel: [319422.267607][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 02:58:07 test-pc kernel: [319422.267795][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 02:58:07 test-pc kernel: [319422.268708][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 02:58:07 test-pc kernel: [319422.268877][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 02:58:07 test-pc kernel: [319422.270484][ T4492] [file ======  kydlp-control----------- ]
+May 24 02:58:07 test-pc kernel: [319422.270711][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 02:58:08 test-pc kernel: [319423.121048][ T4492] [file ======  kylin-dlp-send----------- ]
+May 24 02:58:09 test-pc kernel: [319424.749643][ T4492] [file ======  kydlp-send----------- ]
+May 24 02:58:16 test-pc kernel: [319430.982673][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 03:58:26 test-pc kernel: [323041.860593][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 03:58:37 test-pc kernel: [323052.290931][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 03:58:37 test-pc kernel: [323052.594418][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 03:58:37 test-pc kernel: [323052.594716][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 03:58:37 test-pc kernel: [323052.594858][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 03:58:37 test-pc kernel: [323052.595708][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 03:58:37 test-pc kernel: [323052.595912][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 03:58:37 test-pc kernel: [323052.597311][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 03:58:37 test-pc kernel: [323052.597523][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 03:58:37 test-pc kernel: [323052.598672][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 03:58:37 test-pc kernel: [323052.598840][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 03:58:37 test-pc kernel: [323052.599705][ T4492] [file ======  kydlp-control----------- ]
+May 24 03:58:37 test-pc kernel: [323052.599904][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 03:58:38 test-pc kernel: [323053.527844][ T4492] [file ======  kylin-dlp-send----------- ]
+May 24 03:58:40 test-pc kernel: [323055.101123][ T4492] [file ======  kydlp-send----------- ]
+May 24 03:58:46 test-pc kernel: [323061.077316][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 04:58:56 test-pc kernel: [326671.563920][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 04:59:07 test-pc kernel: [326682.030993][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 04:59:07 test-pc kernel: [326682.287326][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 04:59:07 test-pc kernel: [326682.287504][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 04:59:07 test-pc kernel: [326682.287541][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 04:59:07 test-pc kernel: [326682.288160][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 04:59:07 test-pc kernel: [326682.288194][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 04:59:07 test-pc kernel: [326682.288778][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 04:59:07 test-pc kernel: [326682.288811][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 04:59:07 test-pc kernel: [326682.289402][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 04:59:07 test-pc kernel: [326682.289436][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 04:59:07 test-pc kernel: [326682.290000][ T4492] [file ======  kydlp-control----------- ]
+May 24 04:59:07 test-pc kernel: [326682.290168][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 04:59:08 test-pc kernel: [326682.961789][ T4492] [file ======  kylin-dlp-send----------- ]
+May 24 04:59:09 test-pc kernel: [326684.631206][ T4492] [file ======  kydlp-send----------- ]
+May 24 04:59:14 test-pc kernel: [326689.805067][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 05:59:25 test-pc kernel: [330300.308974][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 05:59:34 test-pc kernel: [330309.627860][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 05:59:34 test-pc kernel: [330309.862521][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 05:59:34 test-pc kernel: [330309.862752][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 05:59:34 test-pc kernel: [330309.862927][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 05:59:34 test-pc kernel: [330309.864330][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 05:59:34 test-pc kernel: [330309.864378][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 05:59:34 test-pc kernel: [330309.865059][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 05:59:34 test-pc kernel: [330309.865094][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 05:59:34 test-pc kernel: [330309.865706][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 05:59:34 test-pc kernel: [330309.865739][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 05:59:34 test-pc kernel: [330309.866299][ T4492] [file ======  kydlp-control----------- ]
+May 24 05:59:34 test-pc kernel: [330309.866469][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 05:59:35 test-pc kernel: [330310.584115][ T4492] [file ======  kylin-dlp-send----------- ]
+May 24 05:59:37 test-pc kernel: [330312.173640][ T4492] [file ======  kydlp-send----------- ]
+May 24 05:59:42 test-pc kernel: [330317.122027][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 06:59:53 test-pc kernel: [333927.889659][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 07:00:01 test-pc kernel: [333936.398242][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 07:00:01 test-pc kernel: [333936.629453][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 07:00:01 test-pc kernel: [333936.629631][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 07:00:01 test-pc kernel: [333936.629673][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 07:00:01 test-pc kernel: [333936.630387][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 07:00:01 test-pc kernel: [333936.630423][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 07:00:01 test-pc kernel: [333936.631090][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 07:00:01 test-pc kernel: [333936.631126][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 07:00:01 test-pc kernel: [333936.631812][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 07:00:01 test-pc kernel: [333936.631849][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 07:00:01 test-pc kernel: [333936.632489][ T4492] [file ======  kydlp-control----------- ]
+May 24 07:00:01 test-pc kernel: [333936.632662][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 07:00:02 test-pc kernel: [333937.356577][ T4492] [file ======  kylin-dlp-send----------- ]
+May 24 07:00:04 test-pc kernel: [333938.977190][ T4492] [file ======  kydlp-send----------- ]
+May 24 07:00:08 test-pc kernel: [333943.744173][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 08:00:20 test-pc kernel: [337555.280048][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 08:00:29 test-pc kernel: [337563.880388][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 08:00:29 test-pc kernel: [337564.105604][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 08:00:29 test-pc kernel: [337564.105778][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 08:00:29 test-pc kernel: [337564.105812][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 08:00:29 test-pc kernel: [337564.106418][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 08:00:29 test-pc kernel: [337564.106452][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 08:00:29 test-pc kernel: [337564.107025][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 08:00:29 test-pc kernel: [337564.107059][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 08:00:29 test-pc kernel: [337564.107676][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 08:00:29 test-pc kernel: [337564.107709][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 08:00:29 test-pc kernel: [337564.108334][ T4492] [file ======  kydlp-control----------- ]
+May 24 08:00:29 test-pc kernel: [337564.108503][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 08:00:29 test-pc kernel: [337564.804511][ T4492] [file ======  kylin-dlp-send----------- ]
+May 24 08:00:31 test-pc kernel: [337566.469697][ T4492] [file ======  kydlp-send----------- ]
+May 24 08:00:37 test-pc kernel: [337572.039890][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 09:00:49 test-pc kernel: [341183.961510][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 09:00:57 test-pc kernel: [341192.371991][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 09:00:57 test-pc kernel: [341192.577810][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 09:00:57 test-pc kernel: [341192.577989][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 09:00:57 test-pc kernel: [341192.578031][ T4492] [file ======  kydlp-control.preinst----------- ]
+May 24 09:00:57 test-pc kernel: [341192.578688][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 09:00:57 test-pc kernel: [341192.578722][ T4492] [file ======  kydlp-control.prerm----------- ]
+May 24 09:00:57 test-pc kernel: [341192.579309][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 09:00:57 test-pc kernel: [341192.579341][ T4492] [file ======  kydlp-control.postinst----------- ]
+May 24 09:00:57 test-pc kernel: [341192.579930][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 09:00:57 test-pc kernel: [341192.579966][ T4492] [file ======  kydlp-control.postrm----------- ]
+May 24 09:00:57 test-pc kernel: [341192.580553][ T4492] [file ======  kydlp-control----------- ]
+May 24 09:00:57 test-pc kernel: [341192.580724][ T4492] [file ======  ky_dlp.ko----------- ]
+May 24 09:00:58 test-pc kernel: [341193.275496][ T4492] [file ======  kylin-dlp-send----------- ]
+May 24 09:01:00 test-pc kernel: [341194.945146][ T4492] [file ======  kydlp-send----------- ]
+May 24 09:01:05 test-pc kernel: [341200.009350][ T4492] [file ======  libgstdvdlpcmdec.so----------- ]
+May 24 09:14:18 test-pc kernel: [341993.692628][T2484909] [file ======  dlp-control----------- ]
+May 24 09:14:19 test-pc kernel: [341994.710729][T2484921] [file ======  dlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341995.995640][T2484928] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341995.996742][T2484928] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.004432][T2484929] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.014267][T2484928] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.025244][T2159936] [file ======  dlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.027274][T2484907] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.031460][T2484911] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.031743][T2484907] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.057674][T2159932] [file ======  dlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.058738][T2159932] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.078243][T2484928] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.124561][T2484951] [file ======  dlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.125521][T2484951] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.127029][T2484951] [file ======  kydlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.476254][T2484929] [file ======  dlp-control----------- ]
+May 24 09:14:21 test-pc kernel: [341996.503334][T2484928] [file ======  kydlp-control----------- ]
+May 24 09:14:22 test-pc kernel: [341997.733216][T2484930] [file ======  kydlp-control.service----------- ]
+May 24 09:14:22 test-pc kernel: [341997.735071][T2484928] [file ======  com.kylin.dlp.TransControl.limit----------- ]
+May 24 09:14:22 test-pc kernel: [341997.736502][T2484928] [file ======  com.kylin.dlp.TransControl.limit.verify----------- ]
+May 24 09:14:22 test-pc kernel: [341997.756400][T2480487] [file ======  kydlp-control----------- ]
+May 24 09:14:22 test-pc kernel: [341997.759690][T2480487] [file ======  kydlp-control----------- ]
+May 24 09:14:22 test-pc kernel: [341997.761265][T2484930] [file ======  com.kylin.dlp.TransControl.limit----------- ]
+May 24 09:14:22 test-pc kernel: [341997.762892][T2484928] [file ======  com.kylin.dlp.TransControl.limit.verify----------- ]
+May 24 09:14:22 test-pc kernel: [341997.771597][T2480487] [file ======  kydlp-control----------- ]
+May 24 09:14:22 test-pc kernel: [341997.772739][T2484930] [file ======  ky_dlp.ko----------- ]
+May 24 09:14:22 test-pc kernel: [341997.779660][T2484930] [file ======  kydlp-control.service----------- ]
+May 24 09:14:22 test-pc kernel: [341997.785245][T2480487] [file ======  kydlp-control----------- ]
+May 24 09:14:22 test-pc kernel: [341997.788816][T2484930] [file ======  com.kylin.dlp.TransControl.limit----------- ]
+May 24 09:14:22 test-pc kernel: [341997.805263][T2484930] [file ======  kydlp-control.substvars----------- ]
+May 24 09:14:23 test-pc kernel: [341997.863546][T2484930] [file ======  ky_dlp.o----------- ]
+May 24 09:14:23 test-pc kernel: [341997.864274][T2484930] [file ======  ky_dlp.ko----------- ]
+May 24 09:14:23 test-pc kernel: [341997.869958][T2484928] [file ======  ky_dlp.mod.o----------- ]
+May 24 09:14:23 test-pc kernel: [341997.872719][T2484928] [file ======  ky_dlp_main.o----------- ]
+May 24 09:14:23 test-pc kernel: [341997.876910][T2484928] [file ======  ky_dlp_policy.o----------- ]
+May 24 09:14:23 test-pc kernel: [341997.878933][T2484930] [file ======  ky_dlp_usbcheck.o----------- ]
+May 24 09:14:25 test-pc kernel: [341999.975704][T2484973] [file ======  dlp-control----------- ]
+May 24 09:14:25 test-pc kernel: [341999.981264][T2484967] [file ======  kydlp-control----------- ]
+May 24 09:14:25 test-pc kernel: [341999.984109][T2484967] [file ======  kydlp-control----------- ]
+May 24 09:14:25 test-pc kernel: [341999.984571][T2484973] [file ======  kydlp-control----------- ]
+May 24 09:14:25 test-pc kernel: [341999.985895][T2484973] [file ======  kydlp-control----------- ]
+May 24 09:14:25 test-pc kernel: [342000.319464][T2484957] [file ======  dlp-control.ab5b4040----------- ]
+May 24 09:14:26 test-pc kernel: [342001.391419][T2159962] [file ======  dlp-control.ab5b4040.xml----------- ]
+May 24 09:14:26 test-pc kernel: [342001.403782][T2484908] [file ======  dlp-controlab5b4040.xml----------- ]
+May 24 09:14:26 test-pc kernel: [342001.602046][T2484923] [file ======  dlp-control.ab5b4040----------- ]
+May 24 09:14:26 test-pc kernel: [342001.750853][T2484927] [file ======  dlp-control.ab5b4040----------- ]
+May 24 09:17:49 test-pc kernel: [342204.065584][T2499715] [file ======  ky_dlp_usbcheck.c----------- ]
+May 24 09:17:49 test-pc kernel: [342204.065657][T2499715] [file ======  .ky_dlp_usbcheck.c.swp----------- ]
+May 24 09:17:49 test-pc kernel: [342204.065676][T2499715] [file ======  .ky_dlp_usbcheck.c.swx----------- ]
+May 24 09:17:49 test-pc kernel: [342204.065730][T2499715] [file ======  .ky_dlp_usbcheck.c.swp----------- ]
+May 24 09:17:49 test-pc kernel: [342204.065761][T2499715] [file ======  ky_dlp_usbcheck.c----------- ]
+May 24 09:18:12 test-pc kernel: [342227.073882][T2502032] [file ======  com.kylin.dlp.TransControl.limit----------- ]
+May 24 09:22:21 test-pc kernel: [342476.595890][T2503795] [file ======  ky_dlp_usbcheck.c.bak.20240507----------- ]
+May 24 09:22:22 test-pc kernel: [342477.432828][T2503795] [file ======  ky_dlp_usbcheck.c----------- ]
+May 24 09:23:15 test-pc kernel: [342530.745383][T2507293] [file ======  com.kylin.dlp.TransControl.limit----------- ]
+May 24 09:24:20 test-pc kernel: [342595.025761][T2510321] [file ======  dlp-controlab5b4040.xml----------- ]
+May 24 09:24:21 test-pc kernel: [342596.080513][T2510329] [file ======  dlp-control.iml----------- ]
+May 24 09:24:22 test-pc kernel: [342597.461155][T2510329] [file ======  dlp-control.ab5b4040.xml----------- ]
+May 24 09:24:22 test-pc kernel: [342597.757096][T2510383] [file ======  dlp-control----------- ]
+May 24 09:24:22 test-pc kernel: [342597.819267][T2510383] [file ======  kydlp-control----------- ]
+May 24 09:24:22 test-pc kernel: [342597.819326][T2510383] [file ======  kydlp-control----------- ]
+May 24 09:24:22 test-pc kernel: [342597.819715][T2510383] [file ======  kydlp-control----------- ]
+May 24 09:24:22 test-pc kernel: [342597.820154][T2510383] [file ======  kydlp-control----------- ]
+May 24 09:24:32 test-pc kernel: [342607.676432][T2523060] [file ======  dlp-control.iml----------- ]
+May 24 09:29:59 test-pc kernel: [342934.637529][T2532037] [file ======  ky_dlp_main.c----------- ]
+May 24 09:29:59 test-pc kernel: [342934.645175][T2532037] [file ======  ky_dlp.h----------- ]
+May 24 09:30:00 test-pc kernel: [342934.972496][T2532037] [file ======  .ky_dlp_main.o.d----------- ]
+May 24 09:30:00 test-pc kernel: [342934.977730][T2532039] [file ======  ky_dlp_main.o----------- ]
+May 24 09:30:00 test-pc kernel: [342934.980108][T2532035] [file ======  .ky_dlp_main.o.cmd----------- ]
+May 24 09:30:00 test-pc kernel: [342934.981057][T2532040] [file ======  .ky_dlp_main.o.d----------- ]
+May 24 09:30:00 test-pc kernel: [342934.981073][T2532040] [file ======  ky_dlp_main.c----------- ]
+May 24 09:30:00 test-pc kernel: [342934.981152][T2532040] [file ======  ky_dlp.h----------- ]
+May 24 09:30:00 test-pc kernel: [342934.994244][T2532049] [file ======  ky_dlp_main.o----------- ]
+May 24 09:30:00 test-pc kernel: [342935.000885][T2532057] [file ======  ky_dlp_usbcheck.c----------- ]
+May 24 09:30:00 test-pc kernel: [342935.006456][T2532057] [file ======  ky_dlp.h----------- ]
+May 24 09:30:00 test-pc kernel: [342935.255647][T2532057] [file ======  ky_dlp_usbcheck.c----------- ]
+May 24 09:30:00 test-pc kernel: [342935.277218][T2532057] [file ======  .ky_dlp_usbcheck.o.d----------- ]
+May 24 09:31:45 test-pc kernel: [343040.594069][T2533094] Security Module ky_dlp removed
+May 24 09:31:45 test-pc kernel: [343040.594073][T2533094] ky_dlp module exit
+May 24 10:15:37 test-pc kernel: [345672.460329][T2564650] ky_dlp module initializing.
+May 24 10:15:37 test-pc kernel: [345672.460332][T2564650] Security Module ky_dlp loaded with 4 hooks
+May 24 10:15:37 test-pc kernel: [345672.460332][T2564650] ky_dlp kernel module add LSM hooks successfully.
+May 24 10:15:37 test-pc kernel: [345672.460338][T2564650] ky_dlp kernel module sysfs init successfully.

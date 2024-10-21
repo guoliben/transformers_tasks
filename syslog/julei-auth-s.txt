@@ -1,0 +1,1077 @@
+Text: Oct  8 08:59:10 test-pc sudo:     root : problem with defaults entries ; TTY=unknown ; PWD=/ ; USER=test ;, Cluster: 0
+Text: Oct  8 08:59:10 test-pc sudo:     root : TTY=unknown ; PWD=/ ; USER=test ; ENV=DISPLAY=:0 XAUTHORITY=/home/test/.Xauthority ; COMMAND=/usr/bin/xdg-open http://capnet.elementary.io, Cluster: 0
+Text: Oct  8 08:59:10 test-pc sudo: pam_unix(sudo:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 08:59:11 test-pc sshd[1118400]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 08:59:11 test-pc systemd-logind[3524]: Session 167 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 08:59:11 test-pc systemd-logind[3524]: Removed session 167., Cluster: 3
+Text: Oct  8 09:00:01 test-pc CRON[1200949]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 09:00:01 test-pc CRON[1200950]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 09:00:01 test-pc CRON[1200949]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:00:44 test-pc sshd[1201635]: Accepted publickey for test from 172.25.84.216 port 49455 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 09:00:44 test-pc sshd[1201635]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 09:00:44 test-pc systemd-logind[3524]: New session 184 of user test., Cluster: 3
+Text: Oct  8 09:03:14 test-pc sshd[1202994]: Accepted publickey for test from 172.25.84.190 port 49817 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 09:03:14 test-pc sshd[1202994]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 09:03:14 test-pc systemd-logind[3524]: New session 185 of user test., Cluster: 3
+Text: Oct  8 09:13:20 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 09:13:20 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 09:13:21 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 09:13:22 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/dpkg -e python3-pypdf2, Cluster: 0
+Text: Oct  8 09:13:22 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 09:13:22 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:13:34 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 09:13:34 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/dpkg -e python3-pypdf2, Cluster: 0
+Text: Oct  8 09:13:34 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 09:13:34 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:13:43 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 09:13:43 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/apt uninstall python3-pypdf2, Cluster: 0
+Text: Oct  8 09:13:43 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 09:13:43 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:14:00 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 09:14:00 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/dpkg -r python3-pypdf2, Cluster: 0
+Text: Oct  8 09:14:00 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 09:14:00 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:14:13 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 09:14:13 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/dpkg -r python3-pypdf2 --force, Cluster: 0
+Text: Oct  8 09:14:13 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 09:14:13 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:14:31 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 09:14:31 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/dpkg -r --force python3-pypdf2, Cluster: 0
+Text: Oct  8 09:14:31 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 09:14:31 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:14:40 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 09:14:41 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/dpkg -r python3-pypdf2 --force, Cluster: 0
+Text: Oct  8 09:14:41 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 09:14:41 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:17:01 test-pc CRON[1223829]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 09:17:01 test-pc CRON[1223829]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:17:26 test-pc sudo: pam_unix(sudo:session): session closed for user test, Cluster: 4
+Text: Oct  8 09:17:40 test-pc CRON[1200950]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:18:20 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 09:18:20 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/dpkg --force-all -r python3-pypdf2, Cluster: 0
+Text: Oct  8 09:18:20 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 09:18:21 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:19:19 test-pc systemd-logind[3524]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 09:19:19 test-pc systemd-logind[3524]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 09:19:23 test-pc ukui-screensaver-dialog: PAM unable to dlopen(pam_gnome_keyring.so): /lib/security/pam_gnome_keyring.so: 
+, Cluster: 1
+Text: Oct  8 09:19:23 test-pc ukui-screensaver-dialog: PAM adding faulty module: pam_gnome_keyring.so, Cluster: 3
+Text: Oct  8 09:19:23 test-pc ukui-screensaver-dialog: pam_succeed_if(ukui-screensaver-qt:auth): requirement "user ingroup nopasswdlogin" not met by user "test", Cluster: 3
+Text: Oct  8 09:30:01 test-pc CRON[1229859]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 09:30:01 test-pc CRON[1229859]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:55:17 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print/pypdf2/usr/lib/python3/dist-packages/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 09:55:17 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 09:55:19 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 09:55:19 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print/pypdf2/usr/lib/python3/dist-packages/PyPDF2 ; USER=root ; COMMAND=/usr/bin/apt install python3-pypdf2, Cluster: 0
+Text: Oct  8 09:55:19 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 09:55:22 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 09:59:55 test-pc sshd[1243303]: Accepted publickey for test from 172.25.84.190 port 51386 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 09:59:55 test-pc sshd[1243303]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 09:59:55 test-pc systemd-logind[3524]: New session 188 of user test., Cluster: 3
+Text: Oct  8 10:00:01 test-pc CRON[1243397]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 10:00:01 test-pc CRON[1243396]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 10:00:01 test-pc CRON[1243396]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 10:01:19 test-pc CRON[1243397]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 10:04:13 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 10:04:13 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/apt --force-all -r python3-pypdf2, Cluster: 0
+Text: Oct  8 10:04:13 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 10:04:13 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 10:04:20 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 10:04:20 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/dpkg --force-all -r python3-pypdf2, Cluster: 0
+Text: Oct  8 10:04:20 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 10:04:21 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 10:06:22 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test/ben/test-print/pypdf2-pip ; USER=root ;, Cluster: 0
+Text: Oct  8 10:06:22 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test/ben/test-print/pypdf2-pip ; USER=root ; COMMAND=/usr/bin/apt install python3-pypdf2, Cluster: 0
+Text: Oct  8 10:06:22 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 10:06:25 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 10:06:51 test-pc sshd[1246821]: Accepted publickey for test from 172.25.84.190 port 51538 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 10:06:51 test-pc sshd[1246821]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 10:06:51 test-pc systemd-logind[3524]: New session 191 of user test., Cluster: 3
+Text: Oct  8 10:12:03 test-pc sshd[1249257]: Accepted publickey for test from 172.25.84.190 port 51691 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 10:12:03 test-pc sshd[1249257]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 10:12:03 test-pc systemd-logind[3524]: New session 192 of user test., Cluster: 3
+Text: Oct  8 10:12:11 test-pc sshd[1249403]: Accepted publickey for test from 172.25.84.216 port 56170 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 10:12:11 test-pc sshd[1249403]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 10:12:11 test-pc systemd-logind[3524]: New session 193 of user test., Cluster: 3
+Text: Oct  8 10:17:01 test-pc CRON[1252315]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 10:17:01 test-pc CRON[1252315]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 10:21:22 test-pc sshd[1202994]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 10:21:22 test-pc systemd-logind[3524]: Session 185 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 10:21:22 test-pc sshd[1243303]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 10:21:22 test-pc systemd-logind[3524]: Removed session 185., Cluster: 3
+Text: Oct  8 10:21:22 test-pc sshd[1246821]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 10:21:22 test-pc sshd[1249257]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 10:21:22 test-pc systemd-logind[3524]: Session 188 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 10:21:22 test-pc systemd-logind[3524]: Removed session 188., Cluster: 3
+Text: Oct  8 10:21:22 test-pc systemd-logind[3524]: Session 191 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 10:21:22 test-pc systemd-logind[3524]: Session 192 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 10:21:22 test-pc systemd-logind[3524]: Removed session 191., Cluster: 3
+Text: Oct  8 10:21:22 test-pc sshd[1254292]: Accepted publickey for test from 172.25.84.190 port 51926 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 10:21:22 test-pc sshd[1254291]: Accepted publickey for test from 172.25.84.190 port 51924 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 10:21:22 test-pc sshd[1254292]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 10:21:22 test-pc sshd[1254291]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 10:21:22 test-pc systemd-logind[3524]: New session 195 of user test., Cluster: 3
+Text: Oct  8 10:21:22 test-pc systemd-logind[3524]: New session 196 of user test., Cluster: 3
+Text: Oct  8 10:21:59 test-pc sshd[1254648]: Accepted publickey for test from 172.25.84.190 port 51969 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 10:21:59 test-pc sshd[1254648]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 10:21:59 test-pc systemd-logind[3524]: New session 197 of user test., Cluster: 3
+Text: Oct  8 10:22:17 test-pc sshd[1254819]: Accepted publickey for test from 172.25.84.190 port 51977 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 10:22:17 test-pc sshd[1254819]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 10:22:17 test-pc systemd-logind[3524]: New session 198 of user test., Cluster: 3
+Text: Oct  8 10:30:01 test-pc CRON[1258753]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 10:30:01 test-pc CRON[1258753]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 11:00:01 test-pc CRON[1275262]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 11:00:01 test-pc CRON[1275261]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 11:00:01 test-pc CRON[1275261]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 11:00:42 test-pc CRON[1275262]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 11:08:47 test-pc sshd[1072451]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 11:08:47 test-pc systemd-logind[3524]: Session 163 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 11:08:47 test-pc systemd-logind[3524]: Removed session 163., Cluster: 3
+Text: Oct  8 11:17:01 test-pc CRON[1282990]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 11:17:01 test-pc CRON[1282990]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 11:30:01 test-pc CRON[1288576]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 11:30:01 test-pc CRON[1288576]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 11:38:13 test-pc systemd-logind[3524]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 11:38:13 test-pc systemd-logind[3524]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 11:38:16 test-pc ukui-screensaver-dialog: PAM unable to dlopen(pam_gnome_keyring.so): /lib/security/pam_gnome_keyring.so: 
+, Cluster: 1
+Text: Oct  8 11:38:16 test-pc ukui-screensaver-dialog: PAM adding faulty module: pam_gnome_keyring.so, Cluster: 3
+Text: Oct  8 11:38:16 test-pc ukui-screensaver-dialog: pam_succeed_if(ukui-screensaver-qt:auth): requirement "user ingroup nopasswdlogin" not met by user "test", Cluster: 3
+Text: Oct  8 12:00:01 test-pc CRON[1303368]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 12:00:01 test-pc CRON[1303369]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 12:00:01 test-pc CRON[1303368]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 12:01:02 test-pc CRON[1303369]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 12:09:59 test-pc sshd[1254819]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 12:09:59 test-pc systemd-logind[3524]: Session 198 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 12:10:18 test-pc systemd-logind[3524]: Removed session 198., Cluster: 3
+Text: Oct  8 12:17:01 test-pc CRON[1311151]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 12:17:01 test-pc CRON[1311151]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 12:30:01 test-pc CRON[1339419]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 12:30:02 test-pc CRON[1339419]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:00:01 test-pc CRON[1352658]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 13:00:01 test-pc CRON[1352659]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 13:00:01 test-pc CRON[1352658]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:01:07 test-pc CRON[1352659]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:17:01 test-pc CRON[1360290]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 13:17:01 test-pc CRON[1360290]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:30:01 test-pc CRON[1368694]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 13:30:01 test-pc CRON[1368694]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:34:06 test-pc sshd[1370538]: Accepted publickey for test from 172.25.84.190 port 56333 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 13:34:06 test-pc sshd[1370538]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 13:34:06 test-pc systemd-logind[3524]: New session 212 of user test., Cluster: 3
+Text: Oct  8 13:35:31 test-pc sshd[1371158]: Accepted publickey for test from 172.25.84.190 port 56458 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 13:35:31 test-pc sshd[1371158]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 13:35:31 test-pc systemd-logind[3524]: New session 213 of user test., Cluster: 3
+Text: Oct  8 13:35:35 test-pc sshd[1371238]: Accepted publickey for test from 172.25.84.190 port 56460 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 13:35:35 test-pc sshd[1371238]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 13:35:35 test-pc systemd-logind[3524]: New session 214 of user test., Cluster: 3
+Text: Oct  8 13:35:50 test-pc sshd[1371384]: Accepted publickey for test from 172.25.84.190 port 56468 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 13:35:50 test-pc sshd[1371384]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 13:35:50 test-pc systemd-logind[3524]: New session 215 of user test., Cluster: 3
+Text: Oct  8 13:44:06 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 13:44:06 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 13:44:09 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 13:44:09 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/pip install PyPDF2, Cluster: 0
+Text: Oct  8 13:44:09 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 13:44:10 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:46:45 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 13:46:45 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 13:46:47 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 13:46:47 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/vim /usr/local/sbin/test1, Cluster: 0
+Text: Oct  8 13:46:47 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 13:47:00 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:47:10 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/test-print ; USER=root ;, Cluster: 0
+Text: Oct  8 13:47:10 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/test-print ; USER=root ; COMMAND=/usr/bin/chmod +x /usr/local/sbin/test1, Cluster: 0
+Text: Oct  8 13:47:10 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 13:47:10 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:51:30 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 13:51:30 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/pip install --upgrade PyPDF2, Cluster: 0
+Text: Oct  8 13:51:30 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 13:51:32 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:54:22 test-pc sshd[1254291]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 13:54:22 test-pc sshd[1254648]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 13:54:22 test-pc systemd-logind[3524]: Session 196 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 13:54:22 test-pc systemd-logind[3524]: Removed session 196., Cluster: 3
+Text: Oct  8 13:54:22 test-pc systemd-logind[3524]: Session 197 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 13:54:22 test-pc systemd-logind[3524]: Removed session 197., Cluster: 3
+Text: Oct  8 13:55:38 test-pc sshd[1254292]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 13:55:38 test-pc systemd-logind[3524]: Session 195 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 13:55:38 test-pc systemd-logind[3524]: Removed session 195., Cluster: 3
+Text: Oct  8 13:55:56 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 13:55:56 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 13:55:58 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 13:55:58 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ; COMMAND=/usr/bin/dpkg --force-all -r python3-pypdf2, Cluster: 0
+Text: Oct  8 13:55:58 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 13:55:59 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:56:30 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 13:56:30 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ; COMMAND=/usr/bin/pip uninstall pypdf2, Cluster: 0
+Text: Oct  8 13:56:30 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 13:56:33 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:56:51 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 13:56:51 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ; COMMAND=/usr/bin/apt install python3-pypdf2, Cluster: 0
+Text: Oct  8 13:56:51 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 13:56:54 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 13:58:30 test-pc systemd-logind[3524]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 13:58:30 test-pc systemd-logind[3524]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 14:00:01 test-pc CRON[1386216]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 14:00:01 test-pc CRON[1386215]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 14:00:01 test-pc CRON[1386215]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:01:28 test-pc CRON[1386216]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:17:01 test-pc CRON[1394235]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 14:17:01 test-pc CRON[1394235]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:30:01 test-pc CRON[1400093]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 14:30:01 test-pc CRON[1400093]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:30:38 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 14:30:38 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 14:30:41 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 14:30:41 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp textmonitor /usr/lib/cups/filter/, Cluster: 0
+Text: Oct  8 14:30:41 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 14:30:41 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:43:22 test-pc polkitd(authority=local): Operator of unix-session:4 FAILED to authenticate to gain authorization for action org.boxmanager.qt.systemdbus.action.login for unix-process:1378781:101966560 [/usr/bin/peony] (owned by unix-user:test), Cluster: 0
+Text: Oct  8 14:43:24 test-pc polkitd(authority=local): Operator of unix-session:4 FAILED to authenticate to gain authorization for action org.boxmanager.qt.systemdbus.action.login for unix-process:1378781:101966560 [/usr/bin/peony] (owned by unix-user:test), Cluster: 0
+Text: Oct  8 14:46:07 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 14:46:07 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 14:46:09 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 14:46:09 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/chmod +x getswitch, Cluster: 0
+Text: Oct  8 14:46:09 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 14:46:09 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:46:33 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 14:47:25 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 14:47:25 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/chmod +x getswitch.sh, Cluster: 0
+Text: Oct  8 14:47:25 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 14:47:25 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:48:26 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 14:48:26 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/cups/cups_monitor.log, Cluster: 0
+Text: Oct  8 14:48:26 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 14:48:30 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:48:39 test-pc sudo:     test : problem with defaults entries ; TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ;, Cluster: 0
+Text: Oct  8 14:48:39 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 14:48:42 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 14:48:42 test-pc sudo:     test : TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/cups/cups_monitor.log, Cluster: 0
+Text: Oct  8 14:48:42 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 14:50:05 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:50:31 test-pc sudo:     test : problem with defaults entries ; TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ;, Cluster: 0
+Text: Oct  8 14:50:31 test-pc sudo:     test : TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ; COMMAND=/usr/bin/vim //usr/lib/cups/filter/textmonitor, Cluster: 0
+Text: Oct  8 14:50:31 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 14:51:58 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:52:00 test-pc sudo:     test : problem with defaults entries ; TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ;, Cluster: 0
+Text: Oct  8 14:52:00 test-pc sudo:     test : TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/cups/cups_monitor.log, Cluster: 0
+Text: Oct  8 14:52:00 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 14:52:19 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:52:20 test-pc sudo:     test : problem with defaults entries ; TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ;, Cluster: 0
+Text: Oct  8 14:52:20 test-pc sudo:     test : TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ; COMMAND=/usr/bin/vim //usr/lib/cups/filter/textmonitor, Cluster: 0
+Text: Oct  8 14:52:20 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 14:52:33 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 14:52:35 test-pc sudo:     test : problem with defaults entries ; TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ;, Cluster: 0
+Text: Oct  8 14:52:35 test-pc sudo:     test : TTY=pts/5 ; PWD=/home/test/zhangyun/mockdata ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/cups/cups_monitor.log, Cluster: 0
+Text: Oct  8 14:52:35 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 14:55:19 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 14:55:19 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/vim //usr/lib/cups/filter/textmonitor, Cluster: 0
+Text: Oct  8 14:55:19 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 14:55:34 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:00:01 test-pc CRON[1420753]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:00:01 test-pc CRON[1420752]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:00:01 test-pc CRON[1420752]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:01:20 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 15:01:20 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp getswitch.sh /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 15:01:20 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:01:20 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:01:48 test-pc CRON[1420753]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:04:40 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 15:04:40 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp textmonitor /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 15:04:40 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:04:40 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:07:35 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 15:07:35 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 15:07:37 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 15:07:37 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ; COMMAND=/usr/bin/dpkg -r --force python3-pypdf2, Cluster: 0
+Text: Oct  8 15:07:37 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:07:37 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:07:54 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 15:07:54 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ; COMMAND=/usr/bin/dpkg --force -r python3-pypdf2, Cluster: 0
+Text: Oct  8 15:07:54 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:07:54 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:08:05 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 15:08:05 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ; COMMAND=/usr/bin/dpkg -r --force-all python3-pypdf2, Cluster: 0
+Text: Oct  8 15:08:05 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:08:05 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:10:45 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 15:10:45 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ; COMMAND=/usr/bin/cp -r ../PyPDF2/ /usr/lib/python3.8/site-packages/, Cluster: 0
+Text: Oct  8 15:10:45 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:10:45 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:11:24 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 15:11:24 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ; COMMAND=/usr/bin/cp -r ../PyPDF2/ /usr/lib/python3/dist-packages/, Cluster: 0
+Text: Oct  8 15:11:24 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:11:24 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:11:42 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ;, Cluster: 0
+Text: Oct  8 15:11:42 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben/test-print/pypdf2-pip/PyPDF2 ; USER=root ; COMMAND=/usr/bin/rm -rf /usr/lib/python3.8/site-packages/PyPDF2/, Cluster: 0
+Text: Oct  8 15:11:42 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:11:42 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:17:01 test-pc CRON[1429325]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:17:01 test-pc CRON[1429325]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:22:16 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 15:22:16 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 15:22:24 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 15:22:24 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp textmonitor /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 15:22:24 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:22:24 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:26:12 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 15:26:12 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp textmonitor /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 15:26:12 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:26:12 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:30:01 test-pc CRON[1435365]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:30:01 test-pc CRON[1435365]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:32:30 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 15:32:30 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getswitch1.sh, Cluster: 0
+Text: Oct  8 15:32:30 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:32:30 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:33:56 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 15:33:56 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getswitch1.sh, Cluster: 0
+Text: Oct  8 15:33:56 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:33:56 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:34:26 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 15:34:26 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getswitch1.sh, Cluster: 0
+Text: Oct  8 15:34:26 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:34:26 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:35:22 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 15:35:22 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getswitch1.sh, Cluster: 0
+Text: Oct  8 15:35:22 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:35:22 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:35:52 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 15:35:52 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp textmonitor /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 15:35:52 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 15:35:52 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:36:30 test-pc systemd-logind[3524]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 15:36:30 test-pc systemd-logind[3524]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 15:36:33 test-pc ukui-screensaver-dialog: PAM unable to dlopen(pam_gnome_keyring.so): /lib/security/pam_gnome_keyring.so: 
+, Cluster: 1
+Text: Oct  8 15:36:33 test-pc ukui-screensaver-dialog: PAM adding faulty module: pam_gnome_keyring.so, Cluster: 3
+Text: Oct  8 15:36:33 test-pc ukui-screensaver-dialog: pam_succeed_if(ukui-screensaver-qt:auth): requirement "user ingroup nopasswdlogin" not met by user "test", Cluster: 3
+Text: Oct  8 15:42:01 test-pc sshd[1371169]: Received disconnect from 172.25.84.190 port 56458:11: disconnected by user, Cluster: 3
+Text: Oct  8 15:42:01 test-pc sshd[1371169]: Disconnected from user test 172.25.84.190 port 56458, Cluster: 3
+Text: Oct  8 15:42:01 test-pc sshd[1371158]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 15:42:01 test-pc systemd-logind[3524]: Session 213 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 15:42:01 test-pc systemd-logind[3524]: Removed session 213., Cluster: 3
+Text: Oct  8 15:42:04 test-pc sshd[1442252]: Accepted publickey for test from 172.25.84.190 port 59844 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 15:42:04 test-pc sshd[1442252]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 15:42:04 test-pc systemd-logind[3524]: New session 224 of user test., Cluster: 3
+Text: Oct  8 15:52:19 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 15:52:19 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 15:52:23 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 15:52:23 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 15:52:23 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:52:23 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:52:23 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 15:52:23 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 15:52:23 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:52:23 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:53:24 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 15:53:24 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 15:53:26 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 15:53:26 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc, Cluster: 0
+Text: Oct  8 15:53:26 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:53:26 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:53:37 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 15:53:37 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc2, Cluster: 0
+Text: Oct  8 15:53:37 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:53:37 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:54:16 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 15:54:16 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/setfattr -n security.dlp -v file-sens:BD_L4_15 abc2, Cluster: 0
+Text: Oct  8 15:54:16 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:54:16 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:54:18 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 15:54:18 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/setfattr -n security.dlp -v file-sens:BD_L4_15 abc3, Cluster: 0
+Text: Oct  8 15:54:18 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:54:18 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:54:21 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 15:54:21 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/setfattr -n security.dlp -v file-sens:BD_L4_15 abc4, Cluster: 0
+Text: Oct  8 15:54:21 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:54:21 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:54:33 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 15:54:33 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/setfattr -n security.dlp -v file-sens:BD_L4_15 abc5, Cluster: 0
+Text: Oct  8 15:54:33 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:54:33 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 15:57:01 test-pc sshd[1451205]: Accepted publickey for test from 172.25.84.190 port 60255 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 15:57:01 test-pc sshd[1451205]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 15:57:01 test-pc systemd-logind[3524]: New session 225 of user test., Cluster: 3
+Text: Oct  8 15:57:01 test-pc sshd[1451216]: Received disconnect from 172.25.84.190 port 60255:11: disconnected by user, Cluster: 3
+Text: Oct  8 15:57:01 test-pc sshd[1451216]: Disconnected from user test 172.25.84.190 port 60255, Cluster: 3
+Text: Oct  8 15:57:01 test-pc sshd[1451205]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 15:57:01 test-pc systemd-logind[3524]: Session 225 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 15:57:01 test-pc systemd-logind[3524]: Removed session 225., Cluster: 3
+Text: Oct  8 15:57:27 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben ; USER=root ;, Cluster: 0
+Text: Oct  8 15:57:27 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben ; USER=root ; COMMAND=/usr/bin/dpkg -i kydlp-d_1.0.0_amd64.deb, Cluster: 0
+Text: Oct  8 15:57:27 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 15:57:28 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:00:01 test-pc CRON[1452483]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:00:01 test-pc CRON[1452482]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:00:08 test-pc CRON[1452482]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:00:15 test-pc sudo:     test : problem with defaults entries ; TTY=pts/14 ; PWD=/home/test/ben ; USER=root ;, Cluster: 0
+Text: Oct  8 16:00:15 test-pc sudo:     test : TTY=pts/14 ; PWD=/home/test/ben ; USER=root ; COMMAND=/usr/bin/sqlite3 /opt/kydlp-d/db/kydlp.db, Cluster: 0
+Text: Oct  8 16:00:15 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:00:27 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:03:35 test-pc CRON[1452483]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:11:33 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:11:33 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:11:43 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:11:43 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getswitch1.sh, Cluster: 0
+Text: Oct  8 16:11:43 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:11:43 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:14:00 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:14:00 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:14:12 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:14:12 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:14:12 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:14:12 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:14:12 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:14:12 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:14:12 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:14:12 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:15:24 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:15:24 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp textmonitor /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 16:15:24 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:15:24 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:15:30 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:15:30 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:15:30 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:15:30 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:15:30 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:15:30 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:15:30 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:15:30 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:16:17 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:16:17 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:16:17 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:16:17 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:16:17 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:16:17 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:16:17 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:16:17 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:16:26 test-pc sudo:     test : problem with defaults entries ; TTY=pts/13 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:16:26 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:16:30 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:16:30 test-pc sudo:     test : TTY=pts/13 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/bin/su, Cluster: 0
+Text: Oct  8 16:16:30 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:16:30 test-pc su: (to root) test on pts/13, Cluster: 3
+Text: Oct  8 16:16:30 test-pc su: pam_unix(su:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:17:01 test-pc CRON[1462746]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:17:01 test-pc CRON[1462746]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: 
+Oct  8 16:20:04 test-pc CRON[3207]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:20:04 test-pc CRON[3205]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:20:04 test-pc CRON[3206]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:20:04 test-pc CRON[3206]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:20:04 test-pc systemd-logind[3271]: kysdk version = 2.0.0.0-0k0.13, Cluster: 3
+Text: Oct  8 16:20:04 test-pc systemd-logind[3271]: New seat seat0., Cluster: 3
+Text: Oct  8 16:20:05 test-pc systemd-logind[3271]: Watching system buttons on /dev/input/event2 (Power Button), Cluster: 3
+Text: Oct  8 16:20:05 test-pc systemd-logind[3271]: Watching system buttons on /dev/input/event1 (Lid Switch), Cluster: 3
+Text: Oct  8 16:20:05 test-pc systemd-logind[3271]: Watching system buttons on /dev/input/event0 (Sleep Button), Cluster: 3
+Text: Oct  8 16:20:05 test-pc systemd-logind[3271]: Watching system buttons on /dev/input/event7 (Intel HID events), Cluster: 3
+Text: Oct  8 16:20:05 test-pc systemd-logind[3271]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard), Cluster: 3
+Text: Oct  8 16:20:05 test-pc systemd-logind[3271]: Watching system buttons on /dev/input/event8 (ThinkPad Extra Buttons), Cluster: 3
+Text: Oct  8 16:20:05 test-pc sshd[3719]: Server listening on 0.0.0.0 port 22., Cluster: 3
+Text: Oct  8 16:20:05 test-pc sshd[3719]: Server listening on :: port 22., Cluster: 3
+Text: Oct  8 16:20:06 test-pc lightdm: pam_unix(lightdm-autologin:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:20:06 test-pc systemd-logind[3271]: New session 4 of user test., Cluster: 3
+Text: Oct  8 16:20:06 test-pc systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:20:07 test-pc systemd-logind[3271]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 16:20:09 test-pc polkitd(authority=local): Registered Authentication Agent for unix-session:4 (system bus name :1.227 [/usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1], object path /org/ukui/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8), Cluster: 0
+Text: Oct  8 16:20:16 test-pc sshd[11299]: Accepted publickey for test from 172.25.84.216 port 53445 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 16:20:16 test-pc sshd[11299]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:20:16 test-pc systemd-logind[3271]: New session 6 of user test., Cluster: 3
+Text: Oct  8 16:20:18 test-pc sshd[11589]: Accepted publickey for test from 172.25.84.216 port 53454 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 16:20:18 test-pc sshd[11589]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:20:18 test-pc systemd-logind[3271]: New session 7 of user test., Cluster: 3
+Text: Oct  8 16:20:19 test-pc sshd[11665]: Accepted publickey for test from 172.25.84.190 port 60943 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 16:20:19 test-pc sshd[11665]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:20:19 test-pc systemd-logind[3271]: New session 8 of user test., Cluster: 3
+Text: Oct  8 16:20:25 test-pc CRON[3207]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:21:38 test-pc sshd[11677]: Received disconnect from 172.25.84.190 port 60943:11: disconnected by user, Cluster: 3
+Text: Oct  8 16:21:38 test-pc sshd[11677]: Disconnected from user test 172.25.84.190 port 60943, Cluster: 3
+Text: Oct  8 16:21:38 test-pc sshd[11665]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 16:21:38 test-pc systemd-logind[3271]: Session 8 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 16:21:46 test-pc sshd[13034]: Accepted publickey for test from 172.25.84.190 port 60991 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 16:21:46 test-pc sshd[13034]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:21:46 test-pc systemd-logind[3271]: New session 9 of user test., Cluster: 3
+Text: Oct  8 16:23:42 test-pc sshd[14047]: Accepted publickey for test from 172.25.84.190 port 61060 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 16:23:42 test-pc sshd[14047]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:23:42 test-pc systemd-logind[3271]: New session 10 of user test., Cluster: 3
+Text: Oct  8 16:26:57 test-pc sshd[11312]: Received disconnect from 172.25.84.216 port 53445:11: disconnected by user, Cluster: 3
+Text: Oct  8 16:26:57 test-pc sshd[11312]: Disconnected from user test 172.25.84.216 port 53445, Cluster: 3
+Text: Oct  8 16:26:57 test-pc systemd-logind[3271]: Session 6 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 16:26:57 test-pc systemd-logind[3271]: Removed session 6., Cluster: 3
+Text: Oct  8 16:26:57 test-pc sshd[11299]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 16:26:58 test-pc sshd[11606]: error: connect_to 127.0.0.1 port 43675: failed., Cluster: 3
+Text: Oct  8 16:26:58 test-pc sshd[11606]: error: connect_to 127.0.0.1 port 43675: failed., Cluster: 3
+Text: Oct  8 16:27:06 test-pc sshd[15193]: Accepted publickey for test from 172.25.84.216 port 53623 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 16:27:06 test-pc sshd[15193]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:27:06 test-pc systemd-logind[3271]: New session 11 of user test., Cluster: 3
+Text: Oct  8 16:27:47 test-pc sshd[11606]: Received disconnect from 172.25.84.216 port 53454:11: disconnected by user, Cluster: 3
+Text: Oct  8 16:27:47 test-pc sshd[11606]: Disconnected from user test 172.25.84.216 port 53454, Cluster: 3
+Text: Oct  8 16:27:47 test-pc sshd[11589]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 16:27:47 test-pc systemd-logind[3271]: Session 7 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 16:27:47 test-pc systemd-logind[3271]: Removed session 7., Cluster: 3
+Text: Oct  8 16:27:48 test-pc sshd[15400]: Accepted publickey for test from 172.25.84.216 port 53639 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 16:27:48 test-pc sshd[15400]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:27:48 test-pc systemd-logind[3271]: New session 12 of user test., Cluster: 3
+Text: Oct  8 16:30:01 test-pc CRON[16397]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:30:01 test-pc CRON[16397]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:34:47 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 16:34:47 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:34:52 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:34:52 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/cups/cups_monitor.log, Cluster: 0
+Text: Oct  8 16:34:52 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:36:41 test-pc sshd[18669]: Accepted publickey for test from 172.25.84.190 port 61402 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 16:36:41 test-pc sshd[18669]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:36:41 test-pc systemd-logind[3271]: New session 14 of user test., Cluster: 3
+Text: Oct  8 16:36:42 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:38:35 test-pc sudo:     test : problem with defaults entries ; TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:38:35 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:38:38 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:38:38 test-pc sudo:     test : TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp /home/test/zhangyun/mockdata/printer_switch_status /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 16:38:38 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:38:38 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:39:49 test-pc sudo:     test : problem with defaults entries ; TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:39:49 test-pc sudo:     test : TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getswitch.sh, Cluster: 0
+Text: Oct  8 16:39:49 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:39:49 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:39:54 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 16:39:54 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/cups/cups_monitor.log, Cluster: 0
+Text: Oct  8 16:39:54 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:40:08 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:40:08 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:40:10 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:40:10 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:40:10 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:40:10 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:40:10 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:40:10 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:40:10 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:40:10 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:40:29 test-pc sudo:     test : problem with defaults entries ; TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:40:29 test-pc sudo:     test : TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp /home/test/zhangyun/mockdata/getswitch.sh /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 16:40:29 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:40:29 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:40:53 test-pc sudo:     test : problem with defaults entries ; TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:40:53 test-pc sudo:     test : TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp getswitch.sh /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 16:40:53 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:40:53 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:41:06 test-pc gnome-keyring-daemon[20943]: couldn't access control socket: /run/user/1000/keyring/control: 
+, Cluster: 1
+Text: Oct  8 16:41:40 test-pc sudo:     test : problem with defaults entries ; TTY=pts/11 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 16:41:40 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:41:42 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:41:42 test-pc sudo:     test : TTY=pts/11 ; PWD=/home/test ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:41:42 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:41:42 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:42:28 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:42:28 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:42:28 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:42:28 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:42:28 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:42:28 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:42:28 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:42:28 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:43:11 test-pc sudo:     test : problem with defaults entries ; TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:43:11 test-pc sudo:     test : TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp getswitch.sh /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 16:43:11 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:43:11 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:43:19 test-pc sudo:     test : problem with defaults entries ; TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:43:19 test-pc sudo:     test : TTY=pts/10 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp getswitch.sh /usr/lib/cups/filter, Cluster: 0
+Text: Oct  8 16:43:19 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:43:19 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:44:50 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:44:50 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:44:50 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:44:50 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:44:50 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:44:50 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:44:50 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:44:50 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:45:38 test-pc sshd[24000]: Accepted publickey for test from 172.25.84.190 port 61657 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 16:45:38 test-pc sshd[24000]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:45:38 test-pc systemd-logind[3271]: New session 15 of user test., Cluster: 3
+Text: Oct  8 16:45:41 test-pc sudo:     test : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 16:45:41 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:45:42 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:45:42 test-pc sudo:     test : TTY=pts/12 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su, Cluster: 0
+Text: Oct  8 16:45:42 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:45:42 test-pc su: (to root) test on pts/12, Cluster: 3
+Text: Oct  8 16:45:42 test-pc su: pam_unix(su:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:46:41 test-pc sudo:     root : problem with defaults entries ; TTY=pts/12 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: 
+Oct  8 16:48:27 test-pc CRON[3269]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:48:27 test-pc CRON[3270]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:48:27 test-pc CRON[3268]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:48:27 test-pc CRON[3269]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:48:27 test-pc systemd-logind[3452]: kysdk version = 2.0.0.0-0k0.13, Cluster: 3
+Text: Oct  8 16:48:27 test-pc systemd-logind[3452]: New seat seat0., Cluster: 3
+Text: Oct  8 16:48:27 test-pc systemd-logind[3452]: Watching system buttons on /dev/input/event2 (Power Button), Cluster: 3
+Text: Oct  8 16:48:28 test-pc systemd-logind[3452]: Watching system buttons on /dev/input/event1 (Lid Switch), Cluster: 3
+Text: Oct  8 16:48:28 test-pc systemd-logind[3452]: Watching system buttons on /dev/input/event0 (Sleep Button), Cluster: 3
+Text: Oct  8 16:48:28 test-pc sshd[3684]: Server listening on 0.0.0.0 port 22., Cluster: 3
+Text: Oct  8 16:48:28 test-pc sshd[3684]: Server listening on :: port 22., Cluster: 3
+Text: Oct  8 16:48:28 test-pc systemd-logind[3452]: Watching system buttons on /dev/input/event7 (Intel HID events), Cluster: 3
+Text: Oct  8 16:48:28 test-pc systemd-logind[3452]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard), Cluster: 3
+Text: Oct  8 16:48:28 test-pc systemd-logind[3452]: Watching system buttons on /dev/input/event8 (ThinkPad Extra Buttons), Cluster: 3
+Text: Oct  8 16:48:30 test-pc lightdm: pam_unix(lightdm-autologin:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:48:30 test-pc systemd-logind[3452]: New session 4 of user test., Cluster: 3
+Text: Oct  8 16:48:30 test-pc systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:48:30 test-pc systemd-logind[3452]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 16:48:32 test-pc polkitd(authority=local): Registered Authentication Agent for unix-session:4 (system bus name :1.236 [/usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1], object path /org/ukui/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8), Cluster: 0
+Text: Oct  8 16:48:41 test-pc sshd[7613]: Accepted publickey for test from 172.25.84.216 port 54202 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 16:48:41 test-pc sshd[7613]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:48:41 test-pc systemd-logind[3452]: New session 6 of user test., Cluster: 3
+Text: Oct  8 16:48:41 test-pc sshd[7786]: Accepted publickey for test from 172.25.84.190 port 61746 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 16:48:41 test-pc sshd[7786]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:48:41 test-pc systemd-logind[3452]: New session 7 of user test., Cluster: 3
+Text: Oct  8 16:48:43 test-pc sshd[7625]: Received disconnect from 172.25.84.216 port 54202:11: disconnected by user, Cluster: 3
+Text: Oct  8 16:48:43 test-pc sshd[7625]: Disconnected from user test 172.25.84.216 port 54202, Cluster: 3
+Text: Oct  8 16:48:43 test-pc sshd[7613]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 16:48:43 test-pc systemd-logind[3452]: Session 6 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 16:48:44 test-pc sshd[8127]: Accepted publickey for test from 172.25.84.216 port 54219 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 16:48:44 test-pc sshd[8127]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:48:44 test-pc systemd-logind[3452]: New session 8 of user test., Cluster: 3
+Text: Oct  8 16:48:47 test-pc CRON[3270]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:49:06 test-pc sshd[8775]: Accepted publickey for test from 172.25.84.190 port 61775 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 16:49:06 test-pc sshd[8775]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:49:06 test-pc systemd-logind[3452]: New session 9 of user test., Cluster: 3
+Text: Oct  8 16:49:09 test-pc sshd[8898]: Accepted publickey for test from 172.25.84.190 port 61777 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 16:49:09 test-pc sshd[8898]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:49:09 test-pc systemd-logind[3452]: New session 10 of user test., Cluster: 3
+Text: Oct  8 16:49:42 test-pc sshd[7798]: Received disconnect from 172.25.84.190 port 61746:11: disconnected by user, Cluster: 3
+Text: Oct  8 16:49:42 test-pc sshd[7798]: Disconnected from user test 172.25.84.190 port 61746, Cluster: 3
+Text: Oct  8 16:49:42 test-pc sshd[7786]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 16:49:42 test-pc systemd-logind[3452]: Session 7 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 16:50:32 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:50:32 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:50:34 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:50:34 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:50:34 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:50:34 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:50:34 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:50:34 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:50:34 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:50:34 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:51:03 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:51:03 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:51:03 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:51:03 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:51:03 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:51:03 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:51:03 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:51:03 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:51:26 test-pc sshd[11014]: Accepted publickey for test from 172.25.84.190 port 61842 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 16:51:26 test-pc sshd[11014]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:51:26 test-pc systemd-logind[3452]: New session 11 of user test., Cluster: 3
+Text: Oct  8 16:51:28 test-pc sudo:     test : problem with defaults entries ; TTY=pts/3 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 16:51:28 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:51:31 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:51:31 test-pc sudo:     test : TTY=pts/3 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su -, Cluster: 0
+Text: Oct  8 16:51:31 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:51:31 test-pc su: (to root) test on pts/3, Cluster: 3
+Text: Oct  8 16:51:31 test-pc su: pam_unix(su-l:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:52:28 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:52:28 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:52:28 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:52:28 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:52:28 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:52:28 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:52:28 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:52:28 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:53:42 test-pc systemd-logind[3452]: Removed session 7., Cluster: 3
+Text: Oct  8 16:54:14 test-pc sshd[12655]: Accepted publickey for test from 172.25.84.216 port 54300 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 16:54:14 test-pc sshd[12655]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 16:54:14 test-pc systemd-logind[3452]: New session 12 of user test., Cluster: 3
+Text: Oct  8 16:55:36 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:55:36 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:55:36 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:55:36 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:55:36 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:55:36 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:55:36 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:55:36 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:55:45 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 16:55:45 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:55:47 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:55:47 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/cups/cups_monitor.log, Cluster: 0
+Text: Oct  8 16:55:47 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:55:54 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:55:54 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:55:57 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:55:57 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getRules.sh, Cluster: 0
+Text: Oct  8 16:55:57 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:55:57 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:56:13 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:56:13 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getRules.sh, Cluster: 0
+Text: Oct  8 16:56:13 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:56:13 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:57:11 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:57:11 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp getRules.sh /usr/lib/cups/filter/, Cluster: 0
+Text: Oct  8 16:57:11 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:57:11 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:57:14 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:57:43 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:57:43 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 16:57:43 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:57:43 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:57:43 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 16:57:43 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 16:57:43 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:57:43 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:58:10 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 16:58:10 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=/usr/bin/cp textmonitor /usr/lib/cups/filter/, Cluster: 0
+Text: Oct  8 16:58:10 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 16:58:10 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:58:15 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 16:58:15 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/cups/cups_monitor.log, Cluster: 0
+Text: Oct  8 16:58:15 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:58:20 test-pc gnome-keyring-daemon[15474]: couldn't access control socket: /run/user/1000/keyring/control: 
+, Cluster: 1
+Text: Oct  8 16:59:32 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 16:59:32 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:59:34 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 16:59:34 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc5, Cluster: 0
+Text: Oct  8 16:59:34 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:59:34 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 16:59:37 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 16:59:37 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc44, Cluster: 0
+Text: Oct  8 16:59:37 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 16:59:37 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:00:01 test-pc CRON[16472]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:00:01 test-pc CRON[16473]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:00:01 test-pc CRON[16472]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:00:41 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:00:41 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp, Cluster: 0
+Text: Oct  8 17:00:41 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:00:41 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:00:45 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:00:45 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc44, Cluster: 0
+Text: Oct  8 17:00:45 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:00:45 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:00:51 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:00:51 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/setfattr -n security.dlp abc44, Cluster: 0
+Text: Oct  8 17:00:51 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:00:51 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:01:24 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:01:24 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/cp abc abc55, Cluster: 0
+Text: Oct  8 17:01:24 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:01:24 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:02:36 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:02:36 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc55, Cluster: 0
+Text: Oct  8 17:02:36 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:02:36 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:03:43 test-pc CRON[16473]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:03:44 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:03:44 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc55, Cluster: 0
+Text: Oct  8 17:03:44 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:03:44 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:03:46 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:03:46 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc55, Cluster: 0
+Text: Oct  8 17:03:46 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:03:46 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:04:33 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:04:33 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:04:33 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:04:33 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:04:33 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:04:33 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 17:04:33 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:04:33 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:04:52 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:04:52 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc55, Cluster: 0
+Text: Oct  8 17:04:52 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:04:52 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:05:57 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:05:57 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:05:57 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:05:57 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:05:57 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:05:57 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 17:05:57 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:05:57 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:07:40 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:07:40 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:07:40 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:07:40 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:07:40 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:07:40 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 17:07:40 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:07:40 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:07:51 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:07:51 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:07:51 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:07:51 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:07:51 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:07:51 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 17:07:51 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:07:51 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:08:39 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:08:39 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/getfattr -n security.dlp abc55, Cluster: 0
+Text: Oct  8 17:08:39 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:08:39 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:09:45 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:09:45 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:09:45 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:09:45 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:09:45 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:09:45 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 17:09:45 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:09:45 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:11:23 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:11:23 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:11:23 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:11:23 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:11:23 test-pc sudo:     test : problem with defaults entries ; TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:11:23 test-pc sudo:     test : TTY=pts/1 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 17:11:23 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:11:23 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:12:56 test-pc su: pam_unix(su-l:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:12:56 test-pc sshd[8898]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:12:56 test-pc sshd[11014]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:12:56 test-pc sshd[8775]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:12:56 test-pc sshd[8127]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:12:56 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:12:56 test-pc sshd[12655]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:12:56 test-pc lightdm: pam_unix(lightdm-autologin:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:12:56 test-pc polkitd(authority=local): Unregistered Authentication Agent for unix-session:4 (system bus name :1.236, object path /org/ukui/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus), Cluster: 0
+Text: Oct  8 17:13:22 test-pc CRON[3205]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:13:22 test-pc CRON[3207]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:13:22 test-pc CRON[3206]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:13:22 test-pc CRON[3206]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:13:22 test-pc systemd-logind[3438]: kysdk version = 2.0.0.0-0k0.13, Cluster: 3
+Text: Oct  8 17:13:22 test-pc systemd-logind[3438]: New seat seat0., Cluster: 3
+Text: Oct  8 17:13:22 test-pc systemd-logind[3438]: Watching system buttons on /dev/input/event2 (Power Button), Cluster: 3
+Text: Oct  8 17:13:22 test-pc systemd-logind[3438]: Watching system buttons on /dev/input/event1 (Lid Switch), Cluster: 3
+Text: Oct  8 17:13:22 test-pc systemd-logind[3438]: Watching system buttons on /dev/input/event0 (Sleep Button), Cluster: 3
+Text: Oct  8 17:13:22 test-pc systemd-logind[3438]: Watching system buttons on /dev/input/event7 (Intel HID events), Cluster: 3
+Text: Oct  8 17:13:22 test-pc systemd-logind[3438]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard), Cluster: 3
+Text: Oct  8 17:13:22 test-pc systemd-logind[3438]: Watching system buttons on /dev/input/event8 (ThinkPad Extra Buttons), Cluster: 3
+Text: Oct  8 17:13:22 test-pc sshd[3731]: Server listening on 0.0.0.0 port 22., Cluster: 3
+Text: Oct  8 17:13:22 test-pc sshd[3731]: Server listening on :: port 22., Cluster: 3
+Text: Oct  8 17:13:24 test-pc lightdm: pam_unix(lightdm-autologin:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:13:24 test-pc systemd-logind[3438]: New session 4 of user test., Cluster: 3
+Text: Oct  8 17:13:24 test-pc systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:13:24 test-pc systemd-logind[3438]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 17:13:26 test-pc polkitd(authority=local): Registered Authentication Agent for unix-session:4 (system bus name :1.221 [/usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1], object path /org/ukui/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8), Cluster: 0
+Text: Oct  8 17:13:37 test-pc sshd[7691]: Accepted publickey for test from 172.25.84.190 port 62341 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 17:13:37 test-pc sshd[7691]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:13:37 test-pc systemd-logind[3438]: New session 6 of user test., Cluster: 3
+Text: Oct  8 17:13:38 test-pc sshd[7918]: Accepted publickey for test from 172.25.84.190 port 62343 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 17:13:38 test-pc sshd[7918]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:13:38 test-pc systemd-logind[3438]: New session 7 of user test., Cluster: 3
+Text: Oct  8 17:13:41 test-pc sshd[8094]: Accepted publickey for test from 172.25.84.190 port 62344 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 17:13:41 test-pc sshd[8094]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:13:41 test-pc systemd-logind[3438]: New session 8 of user test., Cluster: 3
+Text: Oct  8 17:13:41 test-pc CRON[3207]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:13:45 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:13:45 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:13:46 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:13:46 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su -, Cluster: 0
+Text: Oct  8 17:13:46 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:13:46 test-pc su: (to root) test on pts/2, Cluster: 3
+Text: Oct  8 17:13:46 test-pc su: pam_unix(su-l:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:14:11 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:14:11 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:14:13 test-pc sudo: message repeated 2 times: [ pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+], Cluster: 1
+Text: Oct  8 17:14:13 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:14:13 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:14:13 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:14:13 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:14:13 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 17:14:13 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:14:13 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:14:42 test-pc sshd[9520]: Accepted publickey for test from 172.25.84.216 port 55469 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 17:14:42 test-pc sshd[9520]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:14:42 test-pc systemd-logind[3438]: New session 9 of user test., Cluster: 3
+Text: Oct  8 17:17:01 test-pc CRON[11018]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:17:01 test-pc CRON[11018]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:19:05 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 17:19:05 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:19:08 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:19:08 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getRules.sh, Cluster: 0
+Text: Oct  8 17:19:08 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:19:08 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:21:03 test-pc sudo:     root : problem with defaults entries ; TTY=pts/2 ; PWD=/root ; USER=root ;, Cluster: 0
+Text: Oct  8 17:21:03 test-pc sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:21:03 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:21:03 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:22:45 test-pc sshd[8094]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:22:45 test-pc su: pam_unix(su-l:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:22:45 test-pc sshd[7918]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:22:45 test-pc sshd[7691]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:22:45 test-pc sshd[9520]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:22:45 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:22:45 test-pc sshd[9520]: pam_systemd(sshd:session): Failed to release session: 
+, Cluster: 1
+Text: 
+Oct  8 17:29:17 test-pc CRON[3049]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:29:17 test-pc CRON[3050]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:29:17 test-pc CRON[3047]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:29:17 test-pc CRON[3049]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:29:17 test-pc systemd-logind[3446]: kysdk version = 2.0.0.0-0k0.13, Cluster: 3
+Text: Oct  8 17:29:17 test-pc systemd-logind[3446]: New seat seat0., Cluster: 3
+Text: Oct  8 17:29:17 test-pc systemd-logind[3446]: Watching system buttons on /dev/input/event2 (Power Button), Cluster: 3
+Text: Oct  8 17:29:17 test-pc systemd-logind[3446]: Watching system buttons on /dev/input/event1 (Lid Switch), Cluster: 3
+Text: Oct  8 17:29:17 test-pc systemd-logind[3446]: Watching system buttons on /dev/input/event0 (Sleep Button), Cluster: 3
+Text: Oct  8 17:29:17 test-pc sshd[3718]: Server listening on 0.0.0.0 port 22., Cluster: 3
+Text: Oct  8 17:29:17 test-pc sshd[3718]: Server listening on :: port 22., Cluster: 3
+Text: Oct  8 17:29:17 test-pc systemd-logind[3446]: Watching system buttons on /dev/input/event7 (Intel HID events), Cluster: 3
+Text: Oct  8 17:29:17 test-pc systemd-logind[3446]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard), Cluster: 3
+Text: Oct  8 17:29:17 test-pc systemd-logind[3446]: Watching system buttons on /dev/input/event8 (ThinkPad Extra Buttons), Cluster: 3
+Text: Oct  8 17:29:19 test-pc lightdm: pam_unix(lightdm-autologin:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:29:19 test-pc systemd-logind[3446]: New session 4 of user test., Cluster: 3
+Text: Oct  8 17:29:19 test-pc systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:29:20 test-pc systemd-logind[3446]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 17:29:22 test-pc polkitd(authority=local): Registered Authentication Agent for unix-session:4 (system bus name :1.229 [/usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1], object path /org/ukui/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8), Cluster: 0
+Text: Oct  8 17:29:30 test-pc sshd[7831]: Accepted publickey for test from 172.25.84.190 port 62726 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 17:29:30 test-pc sshd[7831]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:29:30 test-pc systemd-logind[3446]: New session 6 of user test., Cluster: 3
+Text: Oct  8 17:29:33 test-pc sshd[8062]: Accepted publickey for test from 172.25.84.190 port 62729 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 17:29:33 test-pc sshd[8062]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:29:33 test-pc systemd-logind[3446]: New session 7 of user test., Cluster: 3
+Text: Oct  8 17:29:35 test-pc sshd[8185]: Accepted publickey for test from 172.25.84.190 port 62730 ssh2: RSA SHA256:g9nTIAtyHZ8i9kA4F5MlErgnYOrE9ZXvfVL1yzXsRNk, Cluster: 5
+Text: Oct  8 17:29:35 test-pc sshd[8185]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:29:35 test-pc systemd-logind[3446]: New session 8 of user test., Cluster: 3
+Text: Oct  8 17:29:35 test-pc sshd[8201]: Accepted publickey for test from 172.25.84.216 port 56168 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 17:29:35 test-pc sshd[8201]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:29:35 test-pc systemd-logind[3446]: New session 9 of user test., Cluster: 3
+Text: Oct  8 17:29:37 test-pc CRON[3050]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:29:40 test-pc sudo:     test : problem with defaults entries ; TTY=pts/2 ; PWD=/home/test ; USER=root ;, Cluster: 0
+Text: Oct  8 17:29:40 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:29:41 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:29:41 test-pc sudo:     test : TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su -, Cluster: 0
+Text: Oct  8 17:29:41 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:29:41 test-pc su: (to root) test on pts/2, Cluster: 3
+Text: Oct  8 17:29:41 test-pc su: pam_unix(su-l:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:30:01 test-pc CRON[9761]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:30:01 test-pc CRON[9761]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:30:05 test-pc sshd[9789]: Accepted publickey for test from 172.25.84.216 port 56200 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 17:30:05 test-pc sshd[9789]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:30:05 test-pc systemd-logind[3446]: New session 11 of user test., Cluster: 3
+Text: Oct  8 17:30:30 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:30:30 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:30:33 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:30:33 test-pc sudo: pam_unix(sudo:auth): authentication failure; logname=test uid=1000 euid=0 tty=/dev/pts/0 ruser=test rhost=  user=test, Cluster: 0
+Text: Oct  8 17:30:34 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:30:36 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:30:36 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:30:36 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:30:36 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:30:36 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:30:36 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 17:30:36 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:30:36 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:31:10 test-pc sudo:     test : problem with defaults entries ; TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ;, Cluster: 0
+Text: Oct  8 17:31:10 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:31:12 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:31:12 test-pc sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/4 ruser=test rhost=  user=test, Cluster: 0
+Text: Oct  8 17:31:15 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:31:19 test-pc sudo: pam_unix(sudo:auth): Couldn't open /etc/securetty: 
+, Cluster: 1
+Text: Oct  8 17:31:19 test-pc sudo:     test : TTY=pts/4 ; PWD=/home/test/zhangyun/work/dlp-v4.2/print-control/src ; USER=root ; COMMAND=./getpdftxt /home/test/
+/zy-printer.pdf, Cluster: 0
+Text: Oct  8 17:31:19 test-pc sudo: pam_unix(sudo:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:31:19 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:31:37 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:31:37 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/rmmod dlp_file_pro, Cluster: 0
+Text: Oct  8 17:31:37 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:31:37 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:31:37 test-pc sudo:     test : problem with defaults entries ; TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ;, Cluster: 0
+Text: Oct  8 17:31:37 test-pc sudo:     test : TTY=pts/0 ; PWD=/home/test/ben/kydlp/Controller/FileProtectModule ; USER=root ; COMMAND=/usr/sbin/insmod dlp_file_pro.ko, Cluster: 0
+Text: Oct  8 17:31:37 test-pc sudo: pam_unix(sudo:session): session opened for user root by test(uid=0), Cluster: 2
+Text: Oct  8 17:31:37 test-pc sudo: pam_unix(sudo:session): session closed for user root, Cluster: 4
+Text: 
+Oct  8 17:33:35 test-pc CRON[3189]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:33:35 test-pc CRON[3187]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:33:35 test-pc CRON[3188]: pam_unix(cron:session): session opened for user root by (uid=0), Cluster: 2
+Text: Oct  8 17:33:35 test-pc CRON[3188]: pam_unix(cron:session): session closed for user root, Cluster: 4
+Text: Oct  8 17:33:35 test-pc systemd-logind[3443]: kysdk version = 2.0.0.0-0k0.13, Cluster: 3
+Text: Oct  8 17:33:35 test-pc systemd-logind[3443]: New seat seat0., Cluster: 3
+Text: Oct  8 17:33:35 test-pc systemd-logind[3443]: Watching system buttons on /dev/input/event2 (Power Button), Cluster: 3
+Text: Oct  8 17:33:35 test-pc systemd-logind[3443]: Watching system buttons on /dev/input/event1 (Lid Switch), Cluster: 3
+Text: Oct  8 17:33:35 test-pc systemd-logind[3443]: Watching system buttons on /dev/input/event0 (Sleep Button), Cluster: 3
+Text: Oct  8 17:33:36 test-pc sshd[3773]: Server listening on 0.0.0.0 port 22., Cluster: 3
+Text: Oct  8 17:33:36 test-pc sshd[3773]: Server listening on :: port 22., Cluster: 3
+Text: Oct  8 17:33:36 test-pc systemd-logind[3443]: Watching system buttons on /dev/input/event7 (Intel HID events), Cluster: 3
+Text: Oct  8 17:33:36 test-pc systemd-logind[3443]: Watching system buttons on /dev/input/event3 (AT Translated Set 2 keyboard), Cluster: 3
+Text: Oct  8 17:33:36 test-pc systemd-logind[3443]: Watching system buttons on /dev/input/event9 (ThinkPad Extra Buttons), Cluster: 3
+Text: Oct  8 17:33:38 test-pc lightdm: pam_unix(lightdm-autologin:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:33:38 test-pc systemd-logind[3443]: New session 4 of user test., Cluster: 3
+Text: Oct  8 17:33:38 test-pc systemd: pam_unix(systemd-user:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:33:38 test-pc systemd-logind[3443]: s3 config support mem standby freeze, Cluster: 3
+Text: Oct  8 17:33:40 test-pc polkitd(authority=local): Registered Authentication Agent for unix-session:4 (system bus name :1.231 [/usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1], object path /org/ukui/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8), Cluster: 0
+Text: Oct  8 17:33:47 test-pc sshd[7605]: Accepted publickey for test from 172.25.84.216 port 56277 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 17:33:47 test-pc sshd[7605]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2
+Text: Oct  8 17:33:47 test-pc systemd-logind[3443]: New session 6 of user test., Cluster: 3
+Text: Oct  8 17:33:49 test-pc sshd[7616]: Received disconnect from 172.25.84.216 port 56277:11: disconnected by user, Cluster: 3
+Text: Oct  8 17:33:49 test-pc sshd[7616]: Disconnected from user test 172.25.84.216 port 56277, Cluster: 3
+Text: Oct  8 17:33:49 test-pc sshd[7605]: pam_unix(sshd:session): session closed for user test, Cluster: 4
+Text: Oct  8 17:33:49 test-pc systemd-logind[3443]: Session 6 logged out. Waiting for processes to exit., Cluster: 3
+Text: Oct  8 17:33:51 test-pc sshd[8012]: Accepted publickey for test from 172.25.84.216 port 56296 ssh2: RSA SHA256:uSnfiCrhEOj0lBbLBrwx6GB79lZl/4aXxV9sC+bzy40, Cluster: 5
+Text: Oct  8 17:33:51 test-pc sshd[8012]: pam_unix(sshd:session): session opened for user test by (uid=0), Cluster: 2

@@ -1,13 +1,23 @@
-from chinese_clip import load_model, tokenize
+# from chinese_clip import load_model, tokenize
+
+import cn_clip.clip as clip
+from cn_clip.clip import load_from_name, available_models, tokenize
+
+print("Available models:", available_models())
+
+
 from PIL import Image
 import torch
 from torchvision import transforms
 
 # 1. 加载模型
-model, preprocess = load_model('ViT-B-16', device='cpu')  # 可改为 'cuda'
+model, preprocess = load_from_name('ViT-B-16', device='cpu')  # 可改为 'cuda'
 
 # 2. 加载图片
-image = Image.open("your_image.jpg").convert("RGB")
+image = Image.open("dog1.jpg").convert("RGB")
+image = Image.open("dog2.jpg").convert("RGB")
+image = Image.open("cat1.png").convert("RGB")
+
 image_input = preprocess(image).unsqueeze(0)  # (1, 3, 224, 224)
 
 # 3. 输入文本
